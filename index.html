@@ -77,10 +77,11 @@
     }
     .avatar {
       width: 120px; height: 120px; border-radius: 50%;
-      background: var(--gradient); margin: 0 auto 2rem;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2.5rem; font-weight: 900; color: var(--white);
+      margin: 0 auto 2rem; overflow: hidden;
       box-shadow: 0 0 60px rgba(123,104,238,0.2);
+    }
+    .avatar img {
+      width: 100%; height: 100%; object-fit: cover;
     }
     .hero h1 {
       font-size: 2.5rem; font-weight: 900; color: var(--white);
@@ -280,7 +281,7 @@
 
     <!-- HERO -->
     <div class="hero">
-      <div class="avatar">K</div>
+      <div class="avatar"><img src="avatar.png" alt="Key Scales - Key Builds AI"></div>
       <h1>Key Scales</h1>
       <div class="tagline"><strong>AI made simple. One build at a time.</strong></div>
       <p class="bio">I build with AI every single day. Websites, automations, agents, full business systems. I share everything I learn so you can skip the confusion and start building too. Follow along and see what AI can actually do.</p>
