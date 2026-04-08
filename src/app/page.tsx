@@ -1,15 +1,23 @@
-import { HillsHero } from "@/components/hills-hero";
-import { HeroGeometric } from "@/components/ui/shape-landing-hero";
+import { Hero } from "@/components/sections/hero";
+import { Socials } from "@/components/sections/socials";
+import { Stats } from "@/components/sections/stats";
+import { Subscribe } from "@/components/sections/subscribe";
+import { Quote } from "@/components/sections/quote";
+import { Builds } from "@/components/sections/builds";
+import { CTA } from "@/components/sections/cta";
+import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <div>
-      <HillsHero />
-      <HeroGeometric
-        badge="What I Build"
-        title1="Websites. Agents."
-        title2="Automations. SOPs."
-      />
-    </div>
+    <main>
+      <Hero />
+      <Socials />
+      <Stats />
+      <Subscribe />
+      <Quote />
+      <Builds />
+      <CTA />
+      <Footer />
+    </main>
   );
 }
