@@ -274,7 +274,12 @@
       .cta-box { padding: 2rem 1.5rem; }
       .cta-box h2 { font-size: 1.25rem; }
     }
+    .gs-hidden { opacity: 0; }
   </style>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
   <div class="page">
@@ -427,5 +432,108 @@
     </div>
 
   </div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero entrance - staggered cascade
+    const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    heroTl
+      .from(".avatar", { scale: 0, rotation: -180, duration: 1, ease: "back.out(1.7)" })
+      .from(".hero h1", { y: 40, opacity: 0, duration: 0.8 }, "-=0.4")
+      .from(".tagline", { y: 30, opacity: 0, duration: 0.6 }, "-=0.4")
+      .from(".bio", { y: 30, opacity: 0, duration: 0.6 }, "-=0.3")
+      .from(".social-link", { y: 20, opacity: 0, duration: 0.4, stagger: 0.1 }, "-=0.2")
+      .from(".cred-item", { y: 30, opacity: 0, duration: 0.5, stagger: 0.15 }, "-=0.2");
+
+    // Credibility numbers count up
+    document.querySelectorAll(".cred-number").forEach(el => {
+      const text = el.textContent;
+      const num = parseInt(text);
+      if (!isNaN(num)) {
+        const suffix = text.replace(/[0-9]/g, "");
+        gsap.from(el, {
+          textContent: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          snap: { textContent: 1 },
+          scrollTrigger: { trigger: el, start: "top 85%" },
+          onUpdate: function() {
+            el.textContent = Math.round(parseFloat(el.textContent)) + suffix;
+          }
+        });
+      }
+    });
+
+    // CTA boxes - slide up with glow pulse
+    gsap.utils.toArray(".cta-box").forEach(box => {
+      gsap.from(box, {
+        y: 50, opacity: 0, duration: 0.8, ease: "power2.out",
+        scrollTrigger: { trigger: box, start: "top 85%" }
+      });
+    });
+
+    // Quote block - slide in from left
+    gsap.from(".quote-block", {
+      x: -60, opacity: 0, duration: 0.8, ease: "power2.out",
+      scrollTrigger: { trigger: ".quote-block", start: "top 85%" }
+    });
+
+    // Section headers - line grows
+    gsap.utils.toArray(".section-header").forEach(header => {
+      const tl = gsap.timeline({
+        scrollTrigger: { trigger: header, start: "top 85%" }
+      });
+      tl.from(header.querySelector("h2"), { y: 20, opacity: 0, duration: 0.5 })
+        .from(header.querySelector(".line"), { width: 0, duration: 0.4, ease: "power2.out" }, "-=0.2");
+    });
+
+    // Build items - stagger from right
+    gsap.utils.toArray(".build-item").forEach((item, i) => {
+      gsap.from(item, {
+        x: 40, opacity: 0, duration: 0.5, delay: i * 0.1,
+        ease: "power2.out",
+        scrollTrigger: { trigger: item, start: "top 90%" }
+      });
+    });
+
+    // Featured cards - scale up
+    gsap.utils.toArray(".featured-card").forEach((card, i) => {
+      gsap.from(card, {
+        scale: 0.9, opacity: 0, duration: 0.6, delay: i * 0.15,
+        ease: "back.out(1.4)",
+        scrollTrigger: { trigger: card, start: "top 85%" }
+      });
+    });
+
+    // Avatar hover - subtle pulse
+    const avatar = document.querySelector(".avatar");
+    avatar.addEventListener("mouseenter", () => {
+      gsap.to(avatar, { scale: 1.08, duration: 0.3, ease: "power2.out" });
+    });
+    avatar.addEventListener("mouseleave", () => {
+      gsap.to(avatar, { scale: 1, duration: 0.3, ease: "power2.out" });
+    });
+
+    // Social links hover glow
+    document.querySelectorAll(".social-link").forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        gsap.to(link, { y: -3, duration: 0.2, ease: "power2.out" });
+      });
+      link.addEventListener("mouseleave", () => {
+        gsap.to(link, { y: 0, duration: 0.2, ease: "power2.out" });
+      });
+    });
+
+    // Build items hover
+    document.querySelectorAll(".build-item").forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        gsap.to(item.querySelector(".build-icon"), { rotation: 5, scale: 1.1, duration: 0.3, ease: "power2.out" });
+      });
+      item.addEventListener("mouseleave", () => {
+        gsap.to(item.querySelector(".build-icon"), { rotation: 0, scale: 1, duration: 0.3, ease: "power2.out" });
+      });
+    });
+  </script>
 </body>
 </html>
