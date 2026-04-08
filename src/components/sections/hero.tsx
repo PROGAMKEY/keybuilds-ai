@@ -8,11 +8,13 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-      <GLSLHills />
+      <div className="absolute inset-0 z-0">
+        <GLSLHills width="100%" height="100%" />
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#030303]/40 via-transparent to-[#030303] z-[2]" />
 
-      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto w-full">
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
