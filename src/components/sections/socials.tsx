@@ -36,7 +36,7 @@ const socials = [
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" />
-        <polygon fill="#030303" points="9.545 15.568 15.818 12 9.545 8.432" />
+        <polygon fill="#0C0E0D" points="9.545 15.568 15.818 12 9.545 8.432" />
       </svg>
     ),
   },
@@ -63,7 +63,7 @@ export function Socials() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -3, scale: 1.05 }}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.03] border border-white/[0.06] text-white/70 text-sm font-medium hover:border-indigo-500/30 hover:text-white hover:shadow-[0_4px_20px_rgba(123,104,238,0.15)] transition-colors"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1A2120] border border-[#EDE9DF]/[0.06] text-[#EDE9DF]/70 text-sm font-medium hover:border-[#3E8E6B]/40 hover:text-[#EDE9DF] transition-colors"
             >
               {social.icon}
               {social.name}

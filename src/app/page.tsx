@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/hero";
 import { Socials } from "@/components/sections/socials";
 import { Stats } from "@/components/sections/stats";
+import { AIStack } from "@/components/sections/ai-stack";
 import { Subscribe } from "@/components/sections/subscribe";
 import { Quote } from "@/components/sections/quote";
 import { Builds } from "@/components/sections/builds";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Socials />
       <Stats />
+      <AIStack />
       <Subscribe />
       <Quote />
       <Builds />

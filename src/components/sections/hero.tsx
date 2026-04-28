@@ -12,18 +12,19 @@ export function Hero() {
         <GLSLHills width="100%" height="100%" />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-[#030303]/40 via-transparent to-[#030303] z-[2]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0C0E0D]/40 via-transparent to-[#0C0E0D] z-[2]" />
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto w-full">
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
           transition={{ duration: 0.8, ease: [0.23, 0.86, 0.39, 0.96] }}
-          className="w-24 h-24 mx-auto mb-8 rounded-full overflow-hidden ring-2 ring-white/10 shadow-[0_0_60px_rgba(123,104,238,0.3)]"
+          className="w-24 h-24 mx-auto mb-8 rounded-full overflow-hidden ring-1 ring-emerald/40 shadow-[0_0_60px_rgba(62,142,107,0.25)]"
+          style={{ boxShadow: "0 0 60px rgba(62, 142, 107, 0.25)" }}
         >
           <Image
             src="/avatar.png"
-            alt="Key Scales"
+            alt="Key Builds AI"
             width={96}
             height={96}
             className="w-full h-full object-cover"
@@ -35,30 +36,42 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="font-heading text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-4"
+          className="font-heading text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-4 text-stone"
+          style={{ color: "#EDE9DF" }}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">
-            Key Scales
-          </span>
+          Key Scales
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="text-lg sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/80 to-teal-300 font-heading font-semibold mb-6"
+          className="text-lg sm:text-xl font-heading font-semibold mb-3"
+          style={{ color: "#3E8E6B" }}
         >
-          AI made simple. One build at a time.
+          I don&rsquo;t sell AI hype. I sell AI you can ship.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="text-base sm:text-lg font-heading font-medium mb-6"
+          style={{ color: "rgba(237, 233, 223, 0.65)" }}
+        >
+          And the time it buys you back.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="text-sm sm:text-base text-white/40 max-w-md mx-auto leading-relaxed mb-10"
+          className="text-sm sm:text-base max-w-md mx-auto leading-relaxed mb-10"
+          style={{ color: "rgba(237, 233, 223, 0.45)" }}
         >
-          I build with AI every single day. Websites, automations, agents, full
-          business systems. Follow along and see what AI can actually do.
+          I build with AI every single day across Claude, ChatGPT, Gemini, and
+          Perplexity. Websites, automations, agents, custom skills. Anyone can
+          learn this — the gate is intimidation. I burn the gate.
         </motion.p>
 
         <motion.div
@@ -69,15 +82,24 @@ export function Hero() {
         >
           <a
             href="#subscribe"
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-teal-500 text-white font-semibold text-sm hover:opacity-90 transition-all hover:-translate-y-0.5 shadow-[0_8px_30px_rgba(123,104,238,0.3)]"
+            className="px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5"
+            style={{
+              backgroundColor: "#3E8E6B",
+              color: "#0C0E0D",
+              boxShadow: "0 8px 30px rgba(62, 142, 107, 0.3)",
+            }}
           >
-            Get Free AI Tips
+            Get free AI tips
           </a>
           <a
             href="#builds"
-            className="px-6 py-3 rounded-xl border border-white/10 text-white/70 font-semibold text-sm hover:border-white/30 hover:text-white transition-all"
+            className="px-6 py-3 rounded-xl border font-semibold text-sm transition-all"
+            style={{
+              borderColor: "rgba(237, 233, 223, 0.15)",
+              color: "rgba(237, 233, 223, 0.75)",
+            }}
           >
-            See My Work
+            See what I&rsquo;ve built
           </a>
         </motion.div>
 
@@ -91,7 +113,7 @@ export function Hero() {
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <ArrowDown className="w-5 h-5 text-white/20" />
+            <ArrowDown className="w-5 h-5" style={{ color: "rgba(237, 233, 223, 0.25)" }} />
           </motion.div>
         </motion.div>
       </div>

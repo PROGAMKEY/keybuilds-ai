@@ -11,12 +11,23 @@ export function Quote() {
         viewport={{ once: true }}
         className="max-w-lg mx-auto"
       >
-        <div className="border-l-2 border-indigo-500/50 pl-6 py-4 bg-white/[0.01] rounded-r-xl">
-          <p className="text-lg text-white/80 font-light italic leading-relaxed">
-            &ldquo;Everyone&rsquo;s talking about AI. I&rsquo;d rather show you what it
-            can do, then teach you how to do it yourself.&rdquo;
+        <div
+          className="border-l-2 pl-6 py-4 bg-[#EDE9DF]/[0.01] rounded-r-xl"
+          style={{ borderLeftColor: "rgba(62, 142, 107, 0.6)" }}
+        >
+          <p
+            className="text-lg font-light italic leading-relaxed"
+            style={{ color: "rgba(237, 233, 223, 0.85)" }}
+          >
+            &ldquo;Anyone can learn AI. The gate is intimidation. I burn the
+            gate.&rdquo;
           </p>
-          <p className="text-sm text-white/30 mt-3 font-medium">Key Scales</p>
+          <p
+            className="text-sm mt-3 font-medium"
+            style={{ color: "rgba(237, 233, 223, 0.4)" }}
+          >
+            Key Scales
+          </p>
         </div>
       </motion.div>
     </section>

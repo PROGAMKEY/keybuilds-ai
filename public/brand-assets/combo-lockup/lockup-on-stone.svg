@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+  <rect width="1200" height="300" fill="#EDE9DF"/>
+  <g transform="translate(40, 30)">
+    <text x="120" y="200" font-family="Geist, 'Inter Tight', 'Helvetica Neue', system-ui, sans-serif" font-size="260" font-weight="900" text-anchor="middle" fill="#0C0E0D" letter-spacing="-12">K</text>
+    <rect x="180" y="172" width="34" height="34" fill="#3E8E6B"/>
+  </g>
+  <text x="320" y="195" font-family="Geist, 'Inter Tight', 'Helvetica Neue', system-ui, sans-serif" font-size="120" font-weight="800" letter-spacing="-3" fill="#0C0E0D">Key Builds AI</text>
+</svg>

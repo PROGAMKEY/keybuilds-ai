@@ -26,9 +26,9 @@ function AnimatedNumber({ value, suffix = "" }: { value: number; suffix?: string
 }
 
 const stats = [
-  { value: 48, suffix: "hr", label: "Average Build Time" },
-  { value: 85, suffix: "+", label: "SEO Score Standard" },
-  { value: 100, suffix: "%", label: "AI-Powered" },
+  { value: 5, suffix: "+", label: "AI platforms shipping daily" },
+  { value: 73, suffix: "", label: "Skills installed and live" },
+  { value: 11, suffix: "", label: "Custom agents built" },
 ];
 
 export function Stats() {
@@ -48,12 +48,17 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="text-center p-5 rounded-2xl bg-white/[0.02] border border-white/[0.05]"
+              className="text-center p-5 rounded-2xl bg-[#1A2120] border border-[#EDE9DF]/[0.05]"
             >
-              <div className="text-3xl sm:text-4xl font-heading font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-teal-400">
+              <div
+                className="text-3xl sm:text-4xl font-heading font-bold tabular-nums"
+                style={{ color: "#3E8E6B" }}
+              >
                 <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-xs text-white/30 mt-1">{stat.label}</div>
+              <div className="text-xs mt-1" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
+                {stat.label}
+              </div>
             </motion.div>
           ))}
         </motion.div>
