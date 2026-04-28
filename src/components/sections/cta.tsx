@@ -39,7 +39,7 @@ export function CTA() {
               className="underline underline-offset-4"
               style={{ color: "#3E8E6B" }}
             >
-              Keys Touch
+              Key&rsquo;s Touch
             </a>
             .
           </p>

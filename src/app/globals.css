@@ -140,6 +140,34 @@
   html {
     @apply font-sans;
   }
+
+  /* Mobile-first responsive guards */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  img, picture, video, iframe, canvas, svg {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Canvas inside fixed-aspect components keeps its set dims (overrides above) */
+  canvas[width][height] {
+    height: revert-layer;
+  }
+
+  /* Tap target floor: 44px per Apple HIG */
+  a, button, [role="button"] {
+    min-height: 44px;
+  }
+  /* Inline links inside paragraphs keep natural sizing */
+  p a, span a, li a {
+    min-height: 0;
+  }
+
+  /* Smooth scroll for in-page anchors */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Prevent iOS zoom on form input focus */

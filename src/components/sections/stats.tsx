@@ -48,15 +48,18 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="text-center p-5 rounded-2xl bg-[#1A2120] border border-[#EDE9DF]/[0.05]"
+              className="text-center p-3 sm:p-5 rounded-2xl bg-[#1A2120] border border-[#EDE9DF]/[0.05]"
             >
               <div
-                className="text-3xl sm:text-4xl font-heading font-bold tabular-nums"
+                className="text-2xl sm:text-4xl font-heading font-bold tabular-nums"
                 style={{ color: "#3E8E6B" }}
               >
                 <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-xs mt-1" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
+              <div
+                className="text-[10px] sm:text-xs mt-1 leading-tight"
+                style={{ color: "rgba(237, 233, 223, 0.45)" }}
+              >
                 {stat.label}
               </div>
             </motion.div>

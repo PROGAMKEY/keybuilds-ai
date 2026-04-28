@@ -106,7 +106,7 @@ export default function RootLayout({
               url: "https://keybuilds.ai",
               jobTitle: "AI Builder, Educator, and Authority",
               description:
-                "Builder-educator hybrid. Ships AI products and teaches people to build responsibly. Founder of Key Builds AI and Keys Touch.",
+                "Builder-educator hybrid. Ships AI products and teaches people to build responsibly. Founder of Key Builds AI and Key's Touch.",
               knowsAbout: [
                 "Artificial Intelligence",
                 "Anthropic Claude",

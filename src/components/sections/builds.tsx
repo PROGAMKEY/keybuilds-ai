@@ -56,7 +56,7 @@ const apps = [
   },
   {
     tag: "Sister brand",
-    title: "Keys Touch",
+    title: "Key's Touch",
     desc: "AI consultancy for mid-market and enterprise. TOUCH framework, lead-magnet PDF, Calendly intake, fully branded.",
     stat: "Live",
     statLabel: "keystouch.com",
@@ -163,7 +163,7 @@ export function Builds() {
             <div className="h-[2px] w-10 rounded" style={{ backgroundColor: "#3E8E6B" }} />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {apps.map((app, i) => (
               <motion.a
                 key={app.title}

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen min-h-[640px] w-full flex items-center justify-center overflow-hidden" style={{ minHeight: "100svh" }}>
       <div className="absolute inset-0 z-0">
         <GLSLHills width="100%" height="100%" />
       </div>
@@ -36,8 +36,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="font-heading text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-4 text-stone"
-          style={{ color: "#EDE9DF" }}
+          className="font-heading font-bold tracking-tight mb-4"
+          style={{
+            color: "#EDE9DF",
+            fontSize: "clamp(2.5rem, 11vw, 6rem)",
+            lineHeight: 1.05,
+          }}
         >
           Key Scales
         </motion.h1>
@@ -46,8 +50,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="text-lg sm:text-xl font-heading font-semibold mb-3"
-          style={{ color: "#3E8E6B" }}
+          className="font-heading font-semibold mb-3 px-2"
+          style={{
+            color: "#3E8E6B",
+            fontSize: "clamp(1rem, 4.5vw, 1.5rem)",
+            lineHeight: 1.25,
+          }}
         >
           I don&rsquo;t sell AI hype. I sell AI you can ship.
         </motion.p>
