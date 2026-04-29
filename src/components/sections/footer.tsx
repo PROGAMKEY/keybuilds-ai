@@ -79,8 +79,22 @@ export function Footer() {
               keystouch.com
             </a>
             <div className="mono-caps pt-3" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
-              Subscribe
+              Downloads
             </div>
+            <a
+              href="/assets/key-builds-ai-services.pdf"
+              className="block font-heading"
+              style={{ color: "#3E8E6B", fontSize: "0.95rem" }}
+            >
+              Services catalog (PDF)
+            </a>
+            <a
+              href="/assets/ai-field-notes-vol-01.pdf"
+              className="block font-heading"
+              style={{ color: "#3E8E6B", fontSize: "0.95rem" }}
+            >
+              AI Field Notes Vol. 01 (PDF)
+            </a>
             <a
               href="/feed.xml"
               className="block font-heading"

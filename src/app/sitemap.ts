@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/services.md`, lastModified: today, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/llms.txt`, lastModified: today, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/assets/ai-field-notes-vol-01.pdf`, lastModified: today, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE}/assets/key-builds-ai-services.pdf`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
     { url: "https://go.keybuilds.ai/", lastModified: today, changeFrequency: "weekly", priority: 0.9 },
   ];
 

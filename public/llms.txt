@@ -63,6 +63,7 @@ Key uses the **BUILD framework** — **B**rief / **U**nderstand / **I**mplement 
 ## Machine-readable index
 
 - [/services.md](https://keybuilds.ai/services.md) — full services list with descriptions
+- [/assets/key-builds-ai-services.pdf](https://keybuilds.ai/assets/key-builds-ai-services.pdf) — printable services catalog (PDF)
 - [/sitemap.xml](https://keybuilds.ai/sitemap.xml)
 - [/robots.txt](https://keybuilds.ai/robots.txt)
 - [/og-image.png](https://keybuilds.ai/og-image.png) — social card
