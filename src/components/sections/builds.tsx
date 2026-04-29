@@ -1,49 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Globe,
-  Layers,
-  Bot,
-  FileText,
-  TrendingUp,
-  Calendar,
-  Sparkles,
-  Wrench,
-  Zap,
-} from "lucide-react";
+import { SectionEyebrow } from "@/components/ui/editorial";
 
 const services = [
-  {
-    icon: Globe,
-    title: "AI-powered websites",
-    desc: "Full sites with SEO, booking, and Schema.org. Deployed in hours.",
-  },
-  {
-    icon: Layers,
-    title: "Automation workflows",
-    desc: "n8n, Make, Zapier, MCP. Connect your tools and kill busywork.",
-  },
-  {
-    icon: Bot,
-    title: "Custom AI agents",
-    desc: "Claude Code skills, chatbots, and agents that work for your business.",
-  },
-  {
-    icon: FileText,
-    title: "SOPs and documentation",
-    desc: "Professional SOPs as Google Docs with automatable Claude Code skills.",
-  },
-  {
-    icon: TrendingUp,
-    title: "SEO and growth systems",
-    desc: "Schema markup, content calendars, dashboards, and ranking strategy.",
-  },
-  {
-    icon: Calendar,
-    title: "Content systems",
-    desc: "Calendars, dashboards, Notion trackers, and repurposing workflows.",
-  },
+  { title: "AI-powered websites", desc: "Full sites with SEO, booking, and Schema.org. Deployed in hours." },
+  { title: "Automation workflows", desc: "n8n, Make, Zapier, MCP. Connect your tools and kill busywork." },
+  { title: "Custom AI agents", desc: "Claude Code skills, chatbots, and agents that work for your business." },
+  { title: "SOPs and documentation", desc: "Professional SOPs as Google Docs with automatable Claude Code skills." },
+  { title: "SEO and growth systems", desc: "Schema markup, content calendars, dashboards, and ranking strategy." },
+  { title: "Content systems", desc: "Calendars, dashboards, Notion trackers, and repurposing workflows." },
 ];
 
 const apps = [
@@ -91,120 +57,106 @@ const projects = [
 
 export function Builds() {
   return (
-    <section id="builds" className="py-20 px-4">
-      <div className="max-w-3xl mx-auto">
-        {/* What I Build */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <h2
-              className="font-heading text-sm font-bold uppercase tracking-widest"
-              style={{ color: "#3E8E6B" }}
-            >
-              What I build
-            </h2>
-            <div className="h-[2px] w-10 rounded" style={{ backgroundColor: "#3E8E6B" }} />
-          </div>
+    <section id="builds" className="py-20 sm:py-28 px-6 sm:px-10">
+      <div className="max-w-4xl mx-auto">
+        <SectionEyebrow num="05" label="The work" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <h2
+          className="mt-8 mb-14 editorial-italic"
+          style={{
+            color: "#EDE9DF",
+            fontSize: "clamp(2rem, 4vw, 2.75rem)",
+            lineHeight: 1.1,
+            letterSpacing: "-0.01em",
+          }}
+        >
+          What I build, ship, and teach.
+        </h2>
+
+        {/* Services — reading-list style */}
+        <div className="mb-20">
+          <div className="mono-caps mb-6" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+            What I build
+          </div>
+          <ul>
             {services.map((service, i) => (
-              <motion.div
+              <motion.li
                 key={service.title}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                whileHover={{ x: 4, scale: 1.02 }}
-                className="flex items-start gap-3 p-4 rounded-xl bg-[#1A2120] border border-[#EDE9DF]/[0.05] hover:border-[#3E8E6B]/30 transition-colors group"
+                transition={{ delay: i * 0.05, duration: 0.55 }}
+                className="grid grid-cols-12 gap-4 py-5 border-t"
+                style={{ borderTopColor: "rgba(237, 233, 223, 0.08)" }}
               >
-                <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-all"
-                  style={{ backgroundColor: "rgba(62, 142, 107, 0.15)" }}
+                <div className="col-span-1 mono-caps pt-1" style={{ color: "rgba(62, 142, 107, 0.7)" }}>
+                  0{i + 1}
+                </div>
+                <h3
+                  className="col-span-11 sm:col-span-4 font-heading font-bold"
+                  style={{ color: "#EDE9DF", fontSize: "1.15rem", letterSpacing: "-0.015em" }}
                 >
-                  <service.icon className="w-5 h-5" style={{ color: "#3E8E6B" }} />
-                </div>
-                <div>
-                  <h3
-                    className="text-sm font-semibold mb-0.5"
-                    style={{ color: "#EDE9DF" }}
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    className="text-xs leading-relaxed"
-                    style={{ color: "rgba(237, 233, 223, 0.4)" }}
-                  >
-                    {service.desc}
-                  </p>
-                </div>
-              </motion.div>
+                  {service.title}
+                </h3>
+                <p
+                  className="col-span-12 sm:col-span-7 text-sm sm:text-base leading-relaxed"
+                  style={{ color: "rgba(237, 233, 223, 0.6)" }}
+                >
+                  {service.desc}
+                </p>
+              </motion.li>
             ))}
-          </div>
-        </motion.div>
+          </ul>
+        </div>
 
-        {/* Apps and properties */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <h2
-              className="font-heading text-sm font-bold uppercase tracking-widest"
-              style={{ color: "#3E8E6B" }}
-            >
-              Apps and properties
-            </h2>
-            <div className="h-[2px] w-10 rounded" style={{ backgroundColor: "#3E8E6B" }} />
+        {/* Apps and properties — feature spread */}
+        <div className="mb-20">
+          <div className="mono-caps mb-6" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+            Apps and properties
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
             {apps.map((app, i) => (
               <motion.a
                 key={app.title}
                 href={app.href || "#"}
                 target={app.href ? "_blank" : undefined}
                 rel={app.href ? "noopener noreferrer" : undefined}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
-                whileHover={{ y: -4, scale: 1.02 }}
-                className="block rounded-xl bg-[#1A2120] border border-[#EDE9DF]/[0.05] overflow-hidden hover:border-[#3E8E6B]/30 transition-all group p-5"
+                transition={{ delay: i * 0.1, duration: 0.6 }}
+                whileHover={{ y: -2 }}
+                className="block p-7 transition-colors group"
+                style={{ backgroundColor: "#0C0E0D" }}
               >
                 <span
-                  className="text-[10px] font-bold uppercase tracking-widest"
+                  className="mono-caps"
                   style={{ color: "#3E8E6B" }}
                 >
                   {app.tag}
                 </span>
                 <h3
-                  className="text-base font-semibold mt-1 mb-1"
-                  style={{ color: "#EDE9DF" }}
+                  className="font-heading font-bold mt-3 mb-3"
+                  style={{ color: "#EDE9DF", fontSize: "1.4rem", letterSpacing: "-0.02em" }}
                 >
                   {app.title}
                 </h3>
                 <p
-                  className="text-xs leading-relaxed mb-3"
-                  style={{ color: "rgba(237, 233, 223, 0.4)" }}
+                  className="text-sm leading-relaxed mb-5"
+                  style={{ color: "rgba(237, 233, 223, 0.55)" }}
                 >
                   {app.desc}
                 </p>
-                <div>
+                <div className="flex items-baseline gap-2">
                   <span
-                    className="text-xl font-heading font-bold tabular-nums"
-                    style={{ color: "#3E8E6B" }}
+                    className="font-heading font-black tabular-nums"
+                    style={{ color: "#3E8E6B", fontSize: "2rem", letterSpacing: "-0.03em", lineHeight: 1 }}
                   >
                     {app.stat}
                   </span>
                   <span
-                    className="text-[10px] ml-2"
-                    style={{ color: "rgba(237, 233, 223, 0.35)" }}
+                    className="mono-caps"
+                    style={{ color: "rgba(237, 233, 223, 0.4)" }}
                   >
                     {app.statLabel}
                   </span>
@@ -212,90 +164,64 @@ export function Builds() {
               </motion.a>
             ))}
           </div>
-        </motion.div>
+        </div>
 
-        {/* Recent client builds */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <h2
-              className="font-heading text-sm font-bold uppercase tracking-widest"
-              style={{ color: "#3E8E6B" }}
-            >
-              Recent client builds
-            </h2>
-            <div className="h-[2px] w-10 rounded" style={{ backgroundColor: "#3E8E6B" }} />
+        {/* Recent client builds — wider cards */}
+        <div>
+          <div className="mono-caps mb-6" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+            Recent client builds
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
             {projects.map((project, i) => (
               <motion.a
                 key={project.title}
                 href={project.href || "#"}
                 target={project.href ? "_blank" : undefined}
                 rel={project.href ? "noopener noreferrer" : undefined}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.15 }}
-                whileHover={{ y: -4, scale: 1.02 }}
-                className="block rounded-xl bg-[#1A2120] border border-[#EDE9DF]/[0.05] overflow-hidden hover:border-[#3E8E6B]/30 transition-all group"
+                transition={{ delay: i * 0.12, duration: 0.6 }}
+                whileHover={{ y: -2 }}
+                className="block p-7 transition-colors group"
+                style={{ backgroundColor: "#0C0E0D" }}
               >
-                <div
-                  className="h-32 flex items-center justify-center border-b border-[#EDE9DF]/[0.05]"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, rgba(62, 142, 107, 0.12) 0%, rgba(31, 77, 58, 0.18) 100%)",
-                  }}
+                <span
+                  className="mono-caps"
+                  style={{ color: "#3E8E6B" }}
                 >
+                  {project.tag}
+                </span>
+                <h3
+                  className="font-heading font-bold mt-3 mb-3"
+                  style={{ color: "#EDE9DF", fontSize: "1.5rem", letterSpacing: "-0.02em" }}
+                >
+                  {project.title}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed mb-5"
+                  style={{ color: "rgba(237, 233, 223, 0.55)" }}
+                >
+                  {project.desc}
+                </p>
+                <div className="flex items-baseline gap-2">
                   <span
-                    className="font-heading text-xl font-bold transition-colors"
-                    style={{ color: "rgba(237, 233, 223, 0.65)" }}
+                    className="font-heading font-black tabular-nums"
+                    style={{ color: "#3E8E6B", fontSize: "2.25rem", letterSpacing: "-0.03em", lineHeight: 1 }}
                   >
-                    {project.title}
+                    {project.stat}
                   </span>
-                </div>
-                <div className="p-5">
                   <span
-                    className="text-[10px] font-bold uppercase tracking-widest"
-                    style={{ color: "#3E8E6B" }}
-                  >
-                    {project.tag}
-                  </span>
-                  <h3
-                    className="text-sm font-semibold mt-1 mb-1"
-                    style={{ color: "#EDE9DF" }}
-                  >
-                    {project.title}
-                  </h3>
-                  <p
-                    className="text-xs leading-relaxed mb-3"
+                    className="mono-caps"
                     style={{ color: "rgba(237, 233, 223, 0.4)" }}
                   >
-                    {project.desc}
-                  </p>
-                  <div>
-                    <span
-                      className="text-xl font-heading font-bold tabular-nums"
-                      style={{ color: "#3E8E6B" }}
-                    >
-                      {project.stat}
-                    </span>
-                    <span
-                      className="text-[10px] ml-2"
-                      style={{ color: "rgba(237, 233, 223, 0.35)" }}
-                    >
-                      {project.statLabel}
-                    </span>
-                  </div>
+                    {project.statLabel}
+                  </span>
                 </div>
               </motion.a>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

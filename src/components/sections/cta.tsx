@@ -1,73 +1,83 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SectionEyebrow } from "@/components/ui/editorial";
 
 export function CTA() {
   return (
-    <section className="py-16 px-4">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="max-w-lg mx-auto"
-      >
-        <div
-          className="relative rounded-2xl border p-8 sm:p-10 text-center overflow-hidden"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(62, 142, 107, 0.10) 0%, rgba(31, 77, 58, 0.10) 100%)",
-            borderColor: "rgba(237, 233, 223, 0.06)",
-          }}
+    <section className="py-20 sm:py-28 px-6 sm:px-10">
+      <div className="max-w-4xl mx-auto">
+        <SectionEyebrow num="08" label="The next move" />
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="mt-10"
         >
           <h2
-            className="font-heading text-2xl sm:text-3xl font-bold mb-3"
-            style={{ color: "#EDE9DF" }}
+            className="editorial-italic mb-6"
+            style={{
+              color: "#EDE9DF",
+              fontSize: "clamp(2.25rem, 5vw, 3.5rem)",
+              lineHeight: 1.05,
+              letterSpacing: "-0.015em",
+            }}
           >
-            Start your AI journey.
+            Three ways to keep going.
           </h2>
-          <p
-            className="text-sm mb-6"
-            style={{ color: "rgba(237, 233, 223, 0.55)" }}
-          >
-            Follow me on socials for daily builds. Subscribe for the weekly
-            breakdown. DM me when you&rsquo;re ready to go deeper. For
-            company-side AI work, jump to{" "}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px mt-8" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
+            <a
+              href="#subscribe"
+              className="block p-7 transition-colors"
+              style={{ backgroundColor: "#0C0E0D" }}
+            >
+              <span className="mono-caps" style={{ color: "#3E8E6B" }}>For learners</span>
+              <h3 className="font-heading font-bold mt-3 mb-3" style={{ color: "#EDE9DF", fontSize: "1.25rem" }}>
+                Subscribe to the newsletter
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+                Free tips, real builds, and step-by-step breakdowns every week.
+              </p>
+              <div className="mt-5 mono-caps" style={{ color: "#3E8E6B" }}>Get tips &rarr;</div>
+            </a>
+
+            <a
+              href="mailto:key@keybuilds.ai"
+              className="block p-7 transition-colors"
+              style={{ backgroundColor: "#0C0E0D" }}
+            >
+              <span className="mono-caps" style={{ color: "#3E8E6B" }}>For founders</span>
+              <h3 className="font-heading font-bold mt-3 mb-3" style={{ color: "#EDE9DF", fontSize: "1.25rem" }}>
+                Work with me directly
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+                Brand deals, speaking, advisory. DM or email when you&rsquo;re ready to go deeper.
+              </p>
+              <div className="mt-5 mono-caps" style={{ color: "#3E8E6B" }}>Email me &rarr;</div>
+            </a>
+
             <a
               href="https://keystouch.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-4"
-              style={{ color: "#3E8E6B" }}
+              className="block p-7 transition-colors"
+              style={{ backgroundColor: "#0C0E0D" }}
             >
-              Key&rsquo;s Touch
-            </a>
-            .
-          </p>
-          <div className="flex gap-3 justify-center flex-wrap">
-            <a
-              href="#subscribe"
-              className="px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5"
-              style={{
-                backgroundColor: "#3E8E6B",
-                color: "#0C0E0D",
-                boxShadow: "0 8px 30px rgba(62, 142, 107, 0.25)",
-              }}
-            >
-              Get free AI tips &rarr;
-            </a>
-            <a
-              href="mailto:key@keybuilds.ai"
-              className="px-6 py-3 rounded-xl bg-[#1A2120] border font-semibold text-sm transition-all"
-              style={{
-                borderColor: "rgba(237, 233, 223, 0.10)",
-                color: "rgba(237, 233, 223, 0.75)",
-              }}
-            >
-              Work with me
+              <span className="mono-caps" style={{ color: "#3E8E6B" }}>For companies</span>
+              <h3 className="font-heading font-bold mt-3 mb-3" style={{ color: "#EDE9DF", fontSize: "1.25rem" }}>
+                Hire Key&rsquo;s Touch
+              </h3>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+                Mid-market and enterprise AI implementation. Done-with-you and done-for-you.
+              </p>
+              <div className="mt-5 mono-caps" style={{ color: "#3E8E6B" }}>keystouch.com &rarr;</div>
             </a>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }

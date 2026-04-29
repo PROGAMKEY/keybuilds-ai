@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter_Tight } from "next/font/google";
+import { Geist, Geist_Mono, Inter_Tight, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -15,6 +15,13 @@ const interTight = Inter_Tight({
 const geistMono = Geist_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-editorial",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -93,7 +100,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${interTight.variable} ${geistMono.variable} dark h-full antialiased`}
+      className={`${geist.variable} ${interTight.variable} ${geistMono.variable} ${instrumentSerif.variable} dark h-full antialiased`}
     >
       <head>
         <script
@@ -149,7 +156,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#0C0E0D] text-[#EDE9DF] font-sans">
+      <body className="min-h-full flex flex-col bg-[#0C0E0D] text-[#EDE9DF] font-sans relative">
+        <div className="grain-overlay" aria-hidden />
         {children}
       </body>
     </html>
