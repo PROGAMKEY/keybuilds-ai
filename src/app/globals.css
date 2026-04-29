@@ -299,3 +299,102 @@ input, textarea, select {
   letter-spacing: 0.22em;
   text-transform: uppercase;
 }
+
+/* Editorial prose for blog post content */
+.prose-editorial {
+  color: rgba(237, 233, 223, 0.85);
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  line-height: 1.7;
+}
+.prose-editorial > * + * {
+  margin-top: 1.25em;
+}
+.prose-editorial h2 {
+  font-family: var(--font-editorial), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: #EDE9DF;
+  margin-top: 2.25em;
+  margin-bottom: 0.5em;
+}
+.prose-editorial h3 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  letter-spacing: -0.015em;
+  color: #EDE9DF;
+  margin-top: 1.75em;
+  margin-bottom: 0.4em;
+}
+.prose-editorial p {
+  margin: 0;
+}
+.prose-editorial a {
+  color: #3E8E6B;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.prose-editorial a:hover {
+  color: #EDE9DF;
+}
+.prose-editorial strong {
+  color: #EDE9DF;
+  font-weight: 700;
+}
+.prose-editorial em {
+  font-style: italic;
+}
+.prose-editorial ul,
+.prose-editorial ol {
+  padding-left: 1.5em;
+}
+.prose-editorial ul {
+  list-style: disc;
+}
+.prose-editorial ol {
+  list-style: decimal;
+}
+.prose-editorial li + li {
+  margin-top: 0.4em;
+}
+.prose-editorial blockquote {
+  border-left: 2px solid rgba(62, 142, 107, 0.5);
+  padding: 0.5em 0 0.5em 1.25em;
+  font-family: var(--font-editorial), Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.15rem, 1.8vw, 1.3rem);
+  color: rgba(237, 233, 223, 0.9);
+}
+.prose-editorial code {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.92em;
+  background: rgba(62, 142, 107, 0.12);
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  color: #EDE9DF;
+}
+.prose-editorial pre {
+  background: #1A2120;
+  border: 1px solid rgba(237, 233, 223, 0.08);
+  border-radius: 8px;
+  padding: 1em;
+  overflow-x: auto;
+  font-size: 0.92em;
+}
+.prose-editorial pre code {
+  background: transparent;
+  padding: 0;
+  color: rgba(237, 233, 223, 0.9);
+}
+.prose-editorial img {
+  border-radius: 6px;
+  margin: 1.5em 0;
+}
+.prose-editorial hr {
+  border: 0;
+  height: 1px;
+  background: rgba(62, 142, 107, 0.25);
+  margin: 2.5em 0;
+}

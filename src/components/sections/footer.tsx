@@ -52,7 +52,17 @@ export function Footer() {
 
           <div className="col-span-12 md:col-span-5 md:text-right space-y-1">
             <div className="mono-caps" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
-              Personal brand
+              Read
+            </div>
+            <a
+              href="/blog"
+              className="block font-heading"
+              style={{ color: "#3E8E6B", fontSize: "1.1rem" }}
+            >
+              Field Notes →
+            </a>
+            <div className="mono-caps pt-3" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
+              Brands
             </div>
             <a
               href="https://keybuilds.ai"
@@ -61,15 +71,22 @@ export function Footer() {
             >
               keybuilds.ai
             </a>
-            <div className="mono-caps pt-3" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
-              Consultancy
-            </div>
             <a
               href="https://keystouch.com"
               className="block font-heading"
               style={{ color: "#3E8E6B", fontSize: "1.1rem" }}
             >
               keystouch.com
+            </a>
+            <div className="mono-caps pt-3" style={{ color: "rgba(237, 233, 223, 0.45)" }}>
+              Subscribe
+            </div>
+            <a
+              href="/feed.xml"
+              className="block font-heading"
+              style={{ color: "#3E8E6B", fontSize: "0.9rem" }}
+            >
+              RSS feed
             </a>
           </div>
         </div>

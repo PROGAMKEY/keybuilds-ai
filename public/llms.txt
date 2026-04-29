@@ -49,6 +49,8 @@ Key uses the **BUILD framework** — **B**rief / **U**nderstand / **I**mplement 
 ## Where to learn more
 
 - Site: https://keybuilds.ai
+- Field Notes (blog): https://keybuilds.ai/blog
+- RSS feed: https://keybuilds.ai/feed.xml
 - Catalog / shop: https://go.keybuilds.ai
 - Newsletter: https://keybuilds.ai/#subscribe
 - Email: key@keybuilds.ai
