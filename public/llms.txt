@@ -28,7 +28,7 @@ He works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**, 
 ## Apps and properties
 
 - [Apex personal assistants](https://keybuilds.ai/#builds) — custom AI assistants per role
-- [Zu-Well](https://keybuilds.ai/#builds) — AI wellness app, multi-sprint, currently in QA
+- [Zu-Well](https://keybuilds.ai/#builds) — wellness app, currently in QA (details under wraps until launch)
 - [Key's Touch](https://keystouch.com) — sister consultancy
 - [AI Field Notes Vol. 01](https://keybuilds.ai/assets/ai-field-notes-vol-01.pdf) — free PDF lead magnet
 

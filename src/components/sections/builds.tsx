@@ -23,9 +23,9 @@ const apps = [
   {
     tag: "Wellness app",
     title: "Zu-Well",
-    desc: "Multi-sprint AI wellness app — barcode restaurant scanner, inflammation tracking, custom token-pricing model. Currently in QA.",
-    stat: "10+",
-    statLabel: "Sprints shipped",
+    desc: "AI wellness app. Currently in QA. More to come.",
+    stat: "Soon",
+    statLabel: "Stealth · in QA",
   },
   {
     tag: "Sister brand",
