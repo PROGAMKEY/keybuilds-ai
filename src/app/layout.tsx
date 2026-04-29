@@ -265,13 +265,13 @@ export default function RootLayout({
                                                                   publisher: { "@type": "Person", name: "Key Scales" },
                                                                   inLanguage: "en-US",
                                                                   potentialAction: {
-                                                                                    "@type": "SubscribeAction",
+  >                                                                                  "@type": "SubscribeAction",
                                                                                     target: "https://keybuilds.ai/#subscribe",
                                                                   },
                                                   }),
                                     }}
                                   />
-                </head>head>
+                </head>
                 <body className="min-h-full flex flex-col bg-[#0C0E0D] text-[#EDE9DF] font-sans relative">
                   {/* Google Tag Manager (noscript) */}
                         <noscript>
@@ -281,10 +281,10 @@ export default function RootLayout({
                                                 width="0"
                                                 style={{ display: "none", visibility: "hidden" }}
                                               />
-                        </noscript>noscript>
+                        </noscript>
                         <div className="grain-overlay" aria-hidden />
                   {children}
-                </body>body>
-          </html>html>
+                </body
+          </html>
         );
 }</html>
