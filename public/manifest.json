@@ -1,0 +1,50 @@
+{
+  "name": "Key Builds AI",
+  "short_name": "Key Builds AI",
+  "description": "I don't sell AI hype. I sell AI you can ship. 1:1 AI tutoring, audits, custom AI assistants, booking systems, templates.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0E0D",
+  "theme_color": "#0C0E0D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["education", "productivity", "business"],
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Subscribe",
+      "url": "/#subscribe",
+      "description": "Get free AI tips weekly + Field Notes Vol. 01 PDF"
+    },
+    {
+      "name": "Services",
+      "url": "/#services",
+      "description": "Seven ways to work with Key"
+    },
+    {
+      "name": "Catalog",
+      "url": "https://go.keybuilds.ai",
+      "description": "Templates, GPTs, Notion dashboards"
+    }
+  ]
+}
