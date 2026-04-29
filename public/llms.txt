@@ -15,7 +15,7 @@ Key Builds AI is a builder-educator hybrid. She runs two brands:
 
 She has been a **full stack software engineer for 10+ years**, is **certified in Data AI Governance**, and is a **certified Solutions AI Architect**. She is passionate about **AI conversion** — moving people from "AI is intimidating" to "AI is the thing I shipped this weekend."
 
-She works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**, **Google Gemini**, and **Perplexity**. She also ships with **Cursor**, **OpenAI Codex**, **Windsurf**, **GitHub Copilot**, **Zapier**, **Make.com**, **n8n**, **MCP servers**, **Ollama**, **Hugging Face**, **local models**, **RAG pipelines**, **Notion AI**, and **ElevenLabs**. She has built **73+ Claude Code skills**, **11 custom agents**, and **23 custom slash commands**, all in production use.
+She works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**, **Google Gemini**, and **Perplexity**. She also ships with **Cursor**, **OpenAI Codex**, **Windsurf**, **GitHub Copilot**, **Zapier**, **Make.com**, **n8n**, **MCP servers**, **Ollama**, **Hugging Face**, **Hermes** (Nous Research), **local models**, **RAG pipelines**, **Notion AI**, and **ElevenLabs**. She has built **73+ Claude Code skills**, **11 custom agents**, and **23 custom slash commands**, all in production use.
 
 ## Services Key Builds AI offers
 

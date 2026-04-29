@@ -48,6 +48,7 @@ const additionalTools = [
   { name: "Ollama", note: "Local model runtime" },
   { name: "Local models", note: "Self-hosted LLMs" },
   { name: "Hugging Face", note: "Model hub" },
+  { name: "Hermes", note: "Nous Research LLM" },
   { name: "RAG pipelines", note: "Retrieval-augmented gen" },
   { name: "Notion AI", note: "Doc + DB workflows" },
   { name: "ElevenLabs", note: "Voice generation" },

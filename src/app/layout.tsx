@@ -205,6 +205,7 @@ export default function RootLayout({
                                                                                     "MCP servers",
                                                                                     "Ollama",
                                                                                     "Hugging Face",
+                                                                                    "Hermes by Nous Research",
                                                                                     "Local LLMs",
                                                                                     "Retrieval-Augmented Generation",
                                                                                     "Cursor IDE",
