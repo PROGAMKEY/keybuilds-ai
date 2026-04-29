@@ -73,8 +73,8 @@ const services = [
     title: "AI Search Visibility Kit",
     desc:
       "Make your site citable by Google AI Overviews, Perplexity, ChatGPT, Gemini, and Copilot — not just rankable. Schema.org with linked @id graph, /llms.txt, machine-readable services file, voice-search markup, sitemap + robots tuned for AI bots, Google Search Console + Bing wired. Add-on to any website build, or standalone retrofit on an existing site.",
-    cta: "Add to my site",
-    href: "mailto:key@keybuilds.ai?subject=AI%20Search%20Visibility%20Kit",
+    cta: "Submit a discovery brief",
+    href: "/aisv/discover",
   },
 ];
 
