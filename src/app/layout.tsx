@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     applicationName: "Key Builds AI",
     keywords: [
           "Key Builds AI",
-          "Key Scales",
           "AI authority",
           "AI tutor",
           "AI tutoring",
