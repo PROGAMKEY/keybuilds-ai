@@ -265,8 +265,8 @@ export default function RootLayout({
                                                                   publisher: { "@type": "Person", name: "Key Scales" },
                                                                   inLanguage: "en-US",
                                                                   potentialAction: {
-                                                                                  "@type": "SubscribeAction",
-                                                                                                              target: "https://keybuilds.ai/#subscribe",
+                                                                                    "@type": "SubscribeAction",
+                                                                                    target: "https://keybuilds.ai/#subscribe",
                                                                   },
                                                   }),
                                     }}
@@ -284,7 +284,7 @@ export default function RootLayout({
                         </noscript>
                         <div className="grain-overlay" aria-hidden />
                   {children}
-                </body
+                </body>
           </html>
         );
 }
