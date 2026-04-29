@@ -237,11 +237,12 @@ export const metadata: Metadata = {
     other: {
           "theme-color": "#0C0E0D",
           "color-scheme": "dark",
-          // TODO: add real verification IDs once Search Console + Bing
-          // Webmaster Tools are wired:
-          //   "google-site-verification": "<your-token>",
-          //   "msvalidate.01": "<your-bing-token>",
-          //   "p:domain_verify": "<pinterest-token>",
+          "msvalidate.01": "5DBF997DAB90546B375685226FA6780B",
+          // TODO: add when wired —
+          //   "google-site-verification": "<your-token>"  (GSC already verified
+          //                              via another method, this just adds the
+          //                              meta tag if asked for)
+          //   "p:domain_verify": "<pinterest-token>"
     },
 };
 
