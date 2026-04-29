@@ -4,7 +4,7 @@ Last updated: 2026-04-28
 Contact: key@keybuilds.ai
 Site: https://keybuilds.ai
 
-Seven ways to work with Key Builds AI. Pricing is custom — email for a quote unless noted.
+Eight ways to work with Key Builds AI. Pricing is custom — email for a quote unless noted.
 
 ---
 
@@ -83,6 +83,18 @@ Seven ways to work with Key Builds AI. Pricing is custom — email for a quote u
 **CTA**: mailto:key@keybuilds.ai?subject=Booking%20system
 
 ---
+
+## 08 — "Burn the Gate" cohort
+
+**What it is**: A five-week live cohort. Two calls per week (one teaching call, one workshop call). Twelve to twenty operators, founders, and creators ship their first working AI build alongside Key. Demo day at the end. You leave with a tool you actually use, plus a peer group that keeps building after the cohort ends.
+
+**For**: Anyone who is ready to stop reading about AI and start shipping. No prior dev experience required — Key handles the technical scaffolding so you focus on the build.
+
+**Format**: 5 weeks · 2 live calls/week · ~3 hours/week · async Slack/Discord between sessions · demo day · lifetime alumni Slack.
+
+**Cohorts**: Run 3-4 times per year. Limited cohort size (12-20).
+
+**CTA**: mailto:key@keybuilds.ai?subject=Burn%20the%20Gate%20cohort%20application
 
 ## How to engage
 

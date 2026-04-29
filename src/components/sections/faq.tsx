@@ -11,7 +11,11 @@ const faqs = [
   },
   {
     q: "What does Key Builds AI offer?",
-    a: "Seven services: 1:1 AI tutoring, AI audits, office hours / Q&A, speaking + brand deals, templates and digital products, Apex personal assistants, and booking systems for small businesses. Plus a free weekly newsletter and a free lead-magnet PDF (AI Field Notes Vol. 01).",
+    a: "Eight services: 1:1 AI tutoring, AI audits, office hours / Q&A, speaking + brand deals, templates and digital products, Apex personal assistants, booking systems for small businesses, and the “Burn the Gate” live AI cohort. Plus a free weekly newsletter and a free lead-magnet PDF (AI Field Notes Vol. 01).",
+  },
+  {
+    q: "What is the “Burn the Gate” cohort?",
+    a: "A five-week live AI cohort with two calls per week — one teaching call, one workshop call. Twelve to twenty operators, founders, and creators ship their first working AI build alongside Key. Demo day at the end. Async Slack between sessions. You leave with a working tool, a peer group that keeps building, and a lifetime alumni community. Cohorts run 3-4 times per year.",
   },
   {
     q: "What is the AI Field Notes PDF?",

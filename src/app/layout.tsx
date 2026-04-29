@@ -263,7 +263,7 @@ export default function RootLayout({
                                                                   logo: "https://keybuilds.ai/brand-assets/logo-mark/on-onyx/512.png",
                                                                   image: "https://keybuilds.ai/og-image.png",
                                                                   description:
-                                                                                    "Personal brand of Key Builds AI — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, and booking systems for small businesses.",
+                                                                                    "Personal brand of Key Builds AI — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, booking systems for small businesses, and the Burn the Gate live AI cohort.",
                                                                   founder: { "@type": "Person", name: "Key Builds AI" },
                                                                   areaServed: "Worldwide",
                                                                   email: "key@keybuilds.ai",
@@ -278,6 +278,7 @@ export default function RootLayout({
                                                                                     "AI Templates and Digital Products",
                                                                                     "Custom AI Personal Assistants",
                                                                                     "Booking Systems for Small Businesses",
+                                                                                    "AI Cohort Program",
                                                                                     "AI Product Development",
                                                                                   ],
                                                                   hasOfferCatalog: {
@@ -325,6 +326,15 @@ export default function RootLayout({
                                                                                                             itemOffered: {
                                                                                                                                     "@type": "Service",
                                                                                                                                     name: "Booking systems for small businesses",
+                                                                                                              },
+                                                                                        },
+                                                                                      {
+                                                                                                            "@type": "Offer",
+                                                                                                            itemOffered: {
+                                                                                                                                    "@type": "Course",
+                                                                                                                                    name: "Burn the Gate cohort",
+                                                                                                                                    description:
+                                                                                                                                                          "5-week live AI cohort. Two calls/week. 12-20 seats. Ship your first working AI build with Key + peers.",
                                                                                                               },
                                                                                         },
                                                                                                       ],

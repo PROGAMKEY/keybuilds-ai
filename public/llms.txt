@@ -26,6 +26,7 @@ She works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**,
 - **Templates and digital products** — Notion dashboards, Claude skills, Custom GPTs, prompt libraries
 - **Apex personal assistants** — custom AI assistants tailored to a role (inbox, calendar, content, research, ops)
 - **Booking systems for small businesses** — automated scheduling, intake, reminders, integrations
+- **"Burn the Gate" cohort** — 5-week live cohort, 12-20 seats, ship your first AI build with Key + peers, run 3-4x/year
 
 ## Apps and properties
 

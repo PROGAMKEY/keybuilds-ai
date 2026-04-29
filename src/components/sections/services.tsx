@@ -60,6 +60,14 @@ const services = [
     cta: "Build my booking flow",
     href: "mailto:key@keybuilds.ai?subject=Booking%20system",
   },
+  {
+    tier: "Cohort",
+    title: "“Burn the Gate” cohort",
+    desc:
+      "Five weeks. Two live calls a week. Twelve to twenty operators, founders, and creators ship their first working AI build alongside me. Demo day at the end. You leave with a tool you actually use.",
+    cta: "Apply for the next cohort",
+    href: "mailto:key@keybuilds.ai?subject=Burn%20the%20Gate%20cohort%20application",
+  },
 ];
 
 export function Services() {
@@ -78,7 +86,7 @@ export function Services() {
               letterSpacing: "-0.01em",
             }}
           >
-            Seven ways to work with me.
+            Eight ways to work with me.
           </h2>
           <p
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"
