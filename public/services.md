@@ -56,9 +56,9 @@ Seven ways to work with Key Scales. Pricing is custom — email for a quote unle
 
 **What it is**: Productized digital products — Notion dashboards, Claude skills, Custom GPTs, prompt libraries, build-your-own-agent kits.
 
-**Format**: Self-serve catalog (opening Q3 2026).
+**Format**: Self-serve catalog at https://go.keybuilds.ai
 
-**CTA**: mailto:key@keybuilds.ai?subject=Templates%20and%20products
+**CTA**: https://go.keybuilds.ai
 
 ---
 

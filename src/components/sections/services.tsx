@@ -41,8 +41,8 @@ const services = [
     title: "Templates and digital products",
     desc:
       "Notion dashboards, Claude skills, custom GPTs, prompt libraries, build-your-own-agent kits. Productized so you don't pay me hourly to copy-paste.",
-    cta: "See the catalog",
-    href: "mailto:key@keybuilds.ai?subject=Templates%20and%20products",
+    cta: "Browse the catalog",
+    href: "https://go.keybuilds.ai",
   },
   {
     tier: "Custom build",

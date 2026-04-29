@@ -31,6 +31,7 @@ She works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**,
 - [Zu-Well](https://keybuilds.ai/#builds) — wellness app, currently in QA (details under wraps until launch)
 - [Key's Touch](https://keystouch.com) — sister consultancy
 - [AI Field Notes Vol. 01](https://keybuilds.ai/assets/ai-field-notes-vol-01.pdf) — free PDF lead magnet
+- [Catalog of templates + digital products](https://go.keybuilds.ai) — Notion dashboards, Claude skills, Custom GPTs, prompt libraries, build-your-own-agent kits
 
 ## Key beliefs (verbatim from the site)
 
@@ -46,6 +47,7 @@ Key uses the **BUILD framework** — **B**rief / **U**nderstand / **I**mplement 
 ## Where to learn more
 
 - Site: https://keybuilds.ai
+- Catalog / shop: https://go.keybuilds.ai
 - Newsletter: https://keybuilds.ai/#subscribe
 - Email: key@keybuilds.ai
 - LinkedIn: https://www.linkedin.com/in/keym/

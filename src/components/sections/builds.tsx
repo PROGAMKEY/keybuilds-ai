@@ -51,11 +51,12 @@ const apps = [
     href: "/assets/ai-field-notes-vol-01.pdf",
   },
   {
-    tag: "Templates",
-    title: "Notion + GPT templates",
-    desc: "Productized digital products — Notion dashboards, Claude skills, custom GPTs, prompt libraries. Build-your-own-agent kits. Catalog opening Q3.",
-    stat: "Q3",
-    statLabel: "Catalog dropping",
+    tag: "Catalog",
+    title: "Templates + digital products",
+    desc: "Productized digital products — Notion dashboards, Claude skills, custom GPTs, prompt libraries, build-your-own-agent kits. The full catalog.",
+    stat: "Shop",
+    statLabel: "go.keybuilds.ai",
+    href: "https://go.keybuilds.ai",
   },
 ];
 
