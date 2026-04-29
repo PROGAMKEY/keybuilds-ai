@@ -57,7 +57,7 @@ export function About() {
               >
                 <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
                 <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
-                  10+ years dev
+                  10+ yrs full-stack engineer
                 </span>
               </span>
               <span
@@ -110,7 +110,7 @@ export function About() {
                 letterSpacing: "-0.005em",
               }}
             >
-              Ten-plus years a developer. Now obsessed with the moment AI
+              Ten-plus years a full stack software engineer. Now obsessed with the moment AI
               clicks for someone — and they realize they can build, too.
             </p>
 

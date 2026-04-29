@@ -156,7 +156,7 @@ export function Hero() {
               className="text-sm sm:text-base leading-relaxed mb-6 max-w-md"
               style={{ color: "rgba(237, 233, 223, 0.6)" }}
             >
-              Builder for 10+ years. Educator. Authority you can talk to. I
+              Full stack software engineer for 10+ years. Educator. Authority you can talk to. I
               work across Claude, ChatGPT, Gemini, Perplexity, Cursor, Codex,
               Windsurf, Copilot, and Zapier — and teach people to build
               responsibly. The gate is intimidation. I burn the gate.
