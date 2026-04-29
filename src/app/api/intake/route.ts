@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createNotionLeadCard } from "@/lib/notion";
 
 /**
  * POST /api/intake
@@ -7,10 +8,14 @@ import { NextRequest, NextResponse } from "next/server";
  *
  * Handles all 9 KBAi services except AISV Kit (which uses /api/aisv/discover).
  *
- * Logs to Vercel runtime. TODO: forward to a real destination —
- *   - Email via Resend / SendGrid → key@keybuilds.ai
- *   - Notion API → AISV Pipeline DB (via integration token)
- *   - Beehiiv subscriber tag (for cohort applications)
+ * Behavior:
+ * 1. Validates required fields + email shape
+ * 2. Logs structured submission to Vercel runtime (always)
+ * 3. If NOTION_TOKEN + NOTION_AISV_DB_ID env vars are set, creates a
+ *    card in the AISV Pipeline DB
+ * 4. Returns ok:true on success
+ *
+ * TODO: also forward via Resend / SendGrid for inbox-level visibility
  */
 export async function POST(req: NextRequest) {
   try {
@@ -40,8 +45,16 @@ export async function POST(req: NextRequest) {
     );
     console.log(`[intake-full/${data.service}]`, JSON.stringify(data));
 
+    // Optional: create Notion card if env wired
+    await createNotionLeadCard({
+      source: "intake",
+      service: data.service,
+      data,
+    });
+
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (err) {
+    console.error("[intake] error", err);
     return NextResponse.json({ ok: false, error: "Bad request" }, { status: 400 });
   }
 }
