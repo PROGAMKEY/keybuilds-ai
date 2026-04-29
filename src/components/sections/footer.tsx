@@ -81,7 +81,7 @@ export function Footer() {
             color: "rgba(237, 233, 223, 0.35)",
           }}
         >
-          <span>&copy; 2026 Key Scales</span>
+          <span>&copy; 2026 Key Builds AI</span>
           <span>Issue 01 / Vol. I</span>
         </div>
       </div>

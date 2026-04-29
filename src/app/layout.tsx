@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://keybuilds.ai"),
     title: "Key Builds AI — I don't sell AI hype. I sell AI you can ship.",
     description:
-          "Key Scales builds with AI every day — websites, automations, agents, custom skills, and shipped products. Anyone can learn AI. The gate is intimidation. I burn the gate.",
+          "Key Builds AI builds with AI every day — websites, automations, agents, custom skills, and shipped products. Anyone can learn AI. The gate is intimidation. I burn the gate.",
     keywords: [
-          "Key Scales",
+          "Key Builds AI",
           "Key Builds AI",
           "AI authority",
           "AI builder",
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
           "AI agents",
           "AI automation",
         ],
-    authors: [{ name: "Key Scales", url: "https://keybuilds.ai" }],
-    creator: "Key Scales",
+    authors: [{ name: "Key Builds AI", url: "https://keybuilds.ai" }],
+    creator: "Key Builds AI",
     publisher: "Key Builds AI",
     robots: {
           index: true,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     openGraph: {
           title: "Key Builds AI — I don't sell AI hype. I sell AI you can ship.",
           description:
-                  "Authority you can talk to. Builder who ships. Follow Key Scales for templates, skills, and the time AI buys you back.",
+                  "Authority you can talk to. Builder who ships. Follow Key Builds AI for templates, skills, and the time AI buys you back.",
           url: "https://keybuilds.ai",
           siteName: "Key Builds AI",
           type: "website",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
           card: "summary_large_image",
           title: "Key Builds AI — I don't sell AI hype. I sell AI you can ship.",
           description:
-                  "Authority you can talk to. Builder who ships. Follow Key Scales.",
+                  "Authority you can talk to. Builder who ships. Follow Key Builds AI.",
           images: ["/og-image.png"],
     },
     icons: {
@@ -122,7 +122,7 @@ export default function RootLayout({
                                                   __html: JSON.stringify({
                                                                   "@context": "https://schema.org",
                                                                   "@type": "Person",
-                                                                  name: "Key Scales",
+                                                                  name: "Key Builds AI",
                                                                   url: "https://keybuilds.ai",
                                                                   image: "https://keybuilds.ai/avatar.png",
                                                                   jobTitle: "AI Builder, Educator, and Authority",
@@ -184,8 +184,8 @@ export default function RootLayout({
                                                                   logo: "https://keybuilds.ai/brand-assets/logo-mark/on-onyx/512.png",
                                                                   image: "https://keybuilds.ai/og-image.png",
                                                                   description:
-                                                                                    "Personal brand of Key Scales — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, and booking systems for small businesses.",
-                                                                  founder: { "@type": "Person", name: "Key Scales" },
+                                                                                    "Personal brand of Key Builds AI — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, and booking systems for small businesses.",
+                                                                  founder: { "@type": "Person", name: "Key Builds AI" },
                                                                   areaServed: "Worldwide",
                                                                   email: "key@keybuilds.ai",
                                                                   priceRange: "$$",
@@ -261,8 +261,8 @@ export default function RootLayout({
                                                                   "@type": "WebSite",
                                                                   name: "Key Builds AI",
                                                                   url: "https://keybuilds.ai",
-                                                                  alternateName: ["Key Scales", "KBAi"],
-                                                                  publisher: { "@type": "Person", name: "Key Scales" },
+                                                                  alternateName: ["Key Builds AI", "KBAi"],
+                                                                  publisher: { "@type": "Person", name: "Key Builds AI" },
                                                                   inLanguage: "en-US",
                                                                   potentialAction: {
                                                                                     "@type": "SubscribeAction",

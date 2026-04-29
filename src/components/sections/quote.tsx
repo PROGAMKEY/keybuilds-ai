@@ -42,7 +42,7 @@ export function Quote() {
               className="mono-caps not-italic"
               style={{ color: "rgba(237, 233, 223, 0.55)" }}
             >
-              Key Scales / Founder
+              Key Builds AI / Founder
             </cite>
           </footer>
         </motion.blockquote>

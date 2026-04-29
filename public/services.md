@@ -4,7 +4,7 @@ Last updated: 2026-04-28
 Contact: key@keybuilds.ai
 Site: https://keybuilds.ai
 
-Seven ways to work with Key Scales. Pricing is custom — email for a quote unless noted.
+Seven ways to work with Key Builds AI. Pricing is custom — email for a quote unless noted.
 
 ---
 

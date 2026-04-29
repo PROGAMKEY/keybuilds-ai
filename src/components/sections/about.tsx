@@ -29,7 +29,7 @@ export function About() {
             >
               <Image
                 src="/images/about-portrait.jpg"
-                alt="Key Scales — founder of Key Builds AI"
+                alt="Key Builds AI — founder portrait"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"

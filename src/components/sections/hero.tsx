@@ -107,7 +107,7 @@ export function Hero() {
                   marginTop: "-0.05em",
                 }}
               >
-                Scales
+                Builds AI
                 <span
                   className="cursor-pulse inline-block ml-3"
                   style={{
