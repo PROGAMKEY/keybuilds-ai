@@ -265,8 +265,8 @@ export default function RootLayout({
                                                                   publisher: { "@type": "Person", name: "Key Scales" },
                                                                   inLanguage: "en-US",
                                                                   potentialAction: {
-  >                                                                                  "@type": "SubscribeAction",
-                                                                                    target: "https://keybuilds.ai/#subscribe",
+                                                                                  "@type": "SubscribeAction",
+                                                                                                              target: "https://keybuilds.ai/#subscribe",
                                                                   },
                                                   }),
                                     }}
