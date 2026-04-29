@@ -420,6 +420,10 @@ export default function RootLayout({
                                                                                     "AI Governance Advisory",
                                                                                     "Responsible AI Implementation",
                                                                                     "AI Product Development",
+                                                                                    "AI Search Visibility Kit",
+                                                                                    "AI SEO Audit",
+                                                                                    "AI Search Optimization",
+                                                                                    "Schema.org Implementation",
                                                                                     "AI Newsletter",
                                                                                   ],
                                                                   hasOfferCatalog: {
@@ -476,6 +480,23 @@ export default function RootLayout({
                                                                                                                                     name: "Burn the Gate cohort",
                                                                                                                                     description:
                                                                                                                                                           "5-week live AI cohort. Two calls/week. 12-20 seats. Ship your first working AI build with Key + peers.",
+                                                                                                                                    provider: {
+                                                                                                                                                          "@type": "Person",
+                                                                                                                                                          "@id": "https://keybuilds.ai/#key",
+                                                                                                                                                          name: "Key Builds AI",
+                                                                                                                                                          url: "https://keybuilds.ai",
+                                                                                                                                    },
+                                                                                                              },
+                                                                                        },
+                                                                                      {
+                                                                                                            "@type": "Offer",
+                                                                                                            priceCurrency: "USD",
+                                                                                                            price: "997",
+                                                                                                            itemOffered: {
+                                                                                                                                    "@type": "Service",
+                                                                                                                                    name: "AI Search Visibility Kit",
+                                                                                                                                    description:
+                                                                                                                                                          "14-component SEO + AI-search optimization package. Schema.org @id-linked entity graph, /llms.txt, /services.md, voice-search speakable markup, robots.txt with AI-bot allowlist, dynamic sitemap, 100+ keywords, Open Graph, multi-size favicons, PWA manifest, Google Search Console + Bing Webmaster wired, validation reports. Add-on, included on premium builds, or standalone retrofit.",
                                                                                                               },
                                                                                         },
                                                                                                       ],

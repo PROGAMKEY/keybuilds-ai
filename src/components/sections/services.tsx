@@ -68,6 +68,14 @@ const services = [
     cta: "Apply for the next cohort",
     href: "mailto:key@keybuilds.ai?subject=Burn%20the%20Gate%20cohort%20application",
   },
+  {
+    tier: "Search visibility",
+    title: "AI Search Visibility Kit",
+    desc:
+      "Make your site citable by Google AI Overviews, Perplexity, ChatGPT, Gemini, and Copilot — not just rankable. Schema.org with linked @id graph, /llms.txt, machine-readable services file, voice-search markup, sitemap + robots tuned for AI bots, Google Search Console + Bing wired. Add-on to any website build, or standalone retrofit on an existing site.",
+    cta: "Add to my site",
+    href: "mailto:key@keybuilds.ai?subject=AI%20Search%20Visibility%20Kit",
+  },
 ];
 
 export function Services() {
@@ -86,7 +94,7 @@ export function Services() {
               letterSpacing: "-0.01em",
             }}
           >
-            Eight ways to work with me.
+            Nine ways to work with me.
           </h2>
           <p
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"

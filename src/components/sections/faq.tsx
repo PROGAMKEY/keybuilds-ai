@@ -14,6 +14,10 @@ const faqs = [
     a: "Eight services: 1:1 AI tutoring, AI audits, office hours / Q&A, speaking + brand deals, templates and digital products, Apex personal assistants, booking systems for small businesses, and the “Burn the Gate” live AI cohort. Plus a free weekly newsletter and a free lead-magnet PDF (AI Field Notes Vol. 01).",
   },
   {
+    q: "What is the AI Search Visibility Kit?",
+    a: "A 14-component SEO + AI-search optimization package. Schema.org structured data with linked @id graph (Person, ProfessionalService, WebSite, Course, FAQ), /llms.txt for AI agents, machine-readable /services.md, voice-search speakable markup, robots.txt with explicit AI-bot allowlist, dynamic sitemap, 100+ clustered keywords, Open Graph + Twitter cards, multi-size favicons + PWA manifest, Google Search Console + Bing Webmaster verification + sitemap submission, validation reports, and a Loom hand-off walkthrough. Reference implementation is keybuilds.ai itself. $997 add-on with a website build, $1,997 standalone retrofit. Included on Key Builds AI premium-tier websites and every Key's Touch website.",
+  },
+  {
     q: "What is the “Burn the Gate” cohort?",
     a: "A five-week live AI cohort with two calls per week — one teaching call, one workshop call. Twelve to twenty operators, founders, and creators ship their first working AI build alongside Key. Demo day at the end. Async Slack between sessions. You leave with a working tool, a peer group that keeps building, and a lifetime alumni community. Cohorts run 3-4 times per year.",
   },

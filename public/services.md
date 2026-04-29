@@ -4,7 +4,7 @@ Last updated: 2026-04-28
 Contact: key@keybuilds.ai
 Site: https://keybuilds.ai
 
-Eight ways to work with Key Builds AI. Pricing is custom — email for a quote unless noted.
+Nine ways to work with Key Builds AI. Pricing is custom — email for a quote unless noted.
 
 ---
 
@@ -95,6 +95,39 @@ Eight ways to work with Key Builds AI. Pricing is custom — email for a quote u
 **Cohorts**: Run 3-4 times per year. Limited cohort size (12-20).
 
 **CTA**: mailto:key@keybuilds.ai?subject=Burn%20the%20Gate%20cohort%20application
+
+---
+
+## 09 — AI Search Visibility Kit
+
+**What it is**: A 14-component SEO + AI-search optimization package that makes any website *citable* by Google AI Overviews, Perplexity, ChatGPT, Gemini, Copilot, and Claude — not just rankable.
+
+**Includes**:
+- Schema.org structured data with `@id`-linked entity graph (Person, ProfessionalService, WebSite, Course/Service, FAQPage, Article)
+- `/llms.txt` AI-agent context file
+- `/services.md` machine-readable catalog
+- Voice-search `speakable` markup
+- AI-bot allowlist in robots.txt (GPTBot, PerplexityBot, ClaudeBot, Google-Extended, etc.)
+- Dynamic sitemap with proper `lastmod` and priority weighting
+- 100+ clustered keywords (brand / intent / tools / long-tail)
+- Open Graph + Twitter card tuning
+- Multi-size favicon set + PWA manifest
+- Google Search Console + Bing Webmaster verification + sitemap submission
+- Top-10-URL indexing requests
+- Validation reports (Rich Results Test + Schema.org validator + AI search test queries)
+- Delivery PDF + Loom walkthrough + 30-day check-in call
+
+**Pricing**:
+- **$997** add-on bundled with a Key Builds AI website build
+- **Included** on Key Builds AI premium tier ($4K+) and on every Key's Touch website
+- **$1,997** standalone (audit + retrofit on existing site)
+- **$297/mo** or **$2,997/yr** ongoing monitoring (optional, post-delivery)
+
+**Reference implementation**: `keybuilds.ai` itself — every component on this list is live on this site.
+
+**Format**: 5-7 day engagement.
+
+**CTA**: mailto:key@keybuilds.ai?subject=AI%20Search%20Visibility%20Kit
 
 ## How to engage
 

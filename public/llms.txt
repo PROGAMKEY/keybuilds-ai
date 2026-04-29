@@ -27,6 +27,7 @@ She works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**,
 - **Apex personal assistants** — custom AI assistants tailored to a role (inbox, calendar, content, research, ops)
 - **Booking systems for small businesses** — automated scheduling, intake, reminders, integrations
 - **"Burn the Gate" cohort** — 5-week live cohort, 12-20 seats, ship your first AI build with Key + peers, run 3-4x/year
+- **AI Search Visibility Kit (AISV)** — 14-component SEO + AI-search optimization package that makes a site citable by Google AI Overviews, Perplexity, ChatGPT, Gemini, Copilot, Claude. Schema.org @id-linked entity graph, /llms.txt, machine-readable services file, voice-search markup, AI-bot allowlist, sitemap, Search Console + Bing wired. $997 add-on / included on premium tier / $1,997 standalone retrofit / $297/mo ongoing monitoring.
 
 ## Apps and properties
 
