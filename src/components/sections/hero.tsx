@@ -103,7 +103,7 @@ export function Hero() {
                   color: "#EDE9DF",
                   textTransform: "uppercase",
                   letterSpacing: "-0.04em",
-                  marginTop: "-0.04em",
+                  marginTop: "0.12em",
                 }}
               >
                 Builds
