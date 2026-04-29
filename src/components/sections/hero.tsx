@@ -107,14 +107,14 @@ export function Hero() {
                   marginTop: "-0.05em",
                 }}
               >
-                Builds AI
+                Builds&nbsp;AI
                 <span
-                  className="cursor-pulse inline-block ml-3"
+                  className="cursor-pulse inline-block ml-2"
                   style={{
-                    width: "0.45em",
-                    height: "0.45em",
+                    width: "0.22em",
+                    height: "0.22em",
                     backgroundColor: "#3E8E6B",
-                    verticalAlign: "0.05em",
+                    verticalAlign: "0.18em",
                   }}
                   aria-hidden
                 />
@@ -145,9 +145,10 @@ export function Hero() {
               className="text-sm sm:text-base leading-relaxed mb-6 max-w-md"
               style={{ color: "rgba(237, 233, 223, 0.6)" }}
             >
-              Builder. Educator. Authority you can talk to. I work across
-              Claude, ChatGPT, Gemini, and Perplexity — and teach people to
-              build responsibly. The gate is intimidation. I burn the gate.
+              Builder for 10+ years. Educator. Authority you can talk to. I
+              work across Claude, ChatGPT, Gemini, Perplexity, Cursor, Codex,
+              Windsurf, Copilot, and Zapier — and teach people to build
+              responsibly. The gate is intimidation. I burn the gate.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a

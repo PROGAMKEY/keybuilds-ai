@@ -17,7 +17,7 @@ export function About() {
           transition={{ duration: 0.9 }}
           className="mt-10 grid grid-cols-12 gap-x-8 gap-y-10 items-start"
         >
-          {/* Portrait — left column on desktop, full-bleed on mobile */}
+          {/* Portrait */}
           <div className="col-span-12 md:col-span-5">
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
@@ -35,7 +35,6 @@ export function About() {
                 className="object-cover"
                 priority={false}
               />
-              {/* Emerald hairline accent — bottom-right corner */}
               <div
                 className="absolute bottom-3 right-3"
                 style={{
@@ -46,9 +45,49 @@ export function About() {
                 aria-hidden
               />
             </motion.div>
+
+            {/* Credibility chips below portrait */}
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
+                style={{
+                  backgroundColor: "#1A2120",
+                  borderColor: "rgba(62, 142, 107, 0.3)",
+                }}
+              >
+                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
+                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
+                  10+ years dev
+                </span>
+              </span>
+              <span
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
+                style={{
+                  backgroundColor: "#1A2120",
+                  borderColor: "rgba(62, 142, 107, 0.3)",
+                }}
+              >
+                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
+                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
+                  AI authority
+                </span>
+              </span>
+              <span
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
+                style={{
+                  backgroundColor: "#1A2120",
+                  borderColor: "rgba(62, 142, 107, 0.3)",
+                }}
+              >
+                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
+                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
+                  Founder × 2
+                </span>
+              </span>
+            </div>
           </div>
 
-          {/* Bio — right column */}
+          {/* Bio */}
           <div className="col-span-12 md:col-span-7">
             <h2
               className="editorial-italic mb-6"
@@ -62,6 +101,19 @@ export function About() {
               I&rsquo;m Key.
             </h2>
 
+            <p
+              className="editorial-italic mb-8"
+              style={{
+                color: "rgba(237, 233, 223, 0.85)",
+                fontSize: "clamp(1.4rem, 2.6vw, 1.8rem)",
+                lineHeight: 1.25,
+                letterSpacing: "-0.005em",
+              }}
+            >
+              Ten-plus years a developer. Now obsessed with the moment AI
+              clicks for someone — and they realize they can build, too.
+            </p>
+
             <div className="space-y-5">
               <p
                 className="leading-relaxed"
@@ -71,14 +123,19 @@ export function About() {
                   lineHeight: 1.65,
                 }}
               >
-                I build with AI every single day. Websites, automations, agents,
-                full business systems. I work across&nbsp;
+                I build with AI every single day. Websites, automations,
+                agents, full business systems. I work across&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Claude</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>ChatGPT</span>,&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Gemini</span>, and&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Perplexity</span> — and ship
-                real products on top of them. Then I teach the people around me
-                to do the same.
+                <span style={{ color: "#3E8E6B" }}>Gemini</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Perplexity</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Cursor</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Codex</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Windsurf</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Copilot</span>, and&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Zapier</span> — and ship
+                real products on top of them. Then I teach the people around
+                me to do the same.
               </p>
               <p
                 className="leading-relaxed"
@@ -88,8 +145,10 @@ export function About() {
                   lineHeight: 1.7,
                 }}
               >
-                Authority isn&rsquo;t loud. It&rsquo;s a track record. I show
-                mine — and teach you to build yours.
+                My passion: <span style={{ color: "#EDE9DF", fontWeight: 600 }}>AI conversion</span> — moving people from
+                "AI is intimidating" to "AI is the thing I shipped this
+                weekend." Authority isn&rsquo;t loud. It&rsquo;s a track
+                record. I show mine — and teach you to build yours.
               </p>
               <div className="flex items-center gap-3 pt-3">
                 <span
@@ -111,7 +170,7 @@ export function About() {
           </div>
         </motion.div>
 
-        {/* Workspace shot — full-width band below About content */}
+        {/* Workspace shot */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

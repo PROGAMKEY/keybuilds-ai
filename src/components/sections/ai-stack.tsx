@@ -36,6 +36,19 @@ const platforms = [
   },
 ];
 
+const additionalTools = [
+  { name: "Cursor", note: "AI-native IDE" },
+  { name: "Codex", note: "OpenAI agent dev" },
+  { name: "Windsurf", note: "Cascade IDE" },
+  { name: "GitHub Copilot", note: "Inline suggestions" },
+  { name: "Zapier", note: "Cross-app automation" },
+  { name: "Make.com", note: "Visual workflows" },
+  { name: "n8n", note: "Self-hosted automation" },
+  { name: "MCP servers", note: "Tool composition" },
+  { name: "Notion AI", note: "Doc + DB workflows" },
+  { name: "ElevenLabs", note: "Voice generation" },
+];
+
 export function AIStack() {
   return (
     <section className="py-20 sm:py-28 px-6 sm:px-10">
@@ -58,8 +71,8 @@ export function AIStack() {
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"
             style={{ color: "rgba(237, 233, 223, 0.55)" }}
           >
-            Not loyal to one model. I pick the right tool for the job — and
-            I&rsquo;ll show you when to do the same.
+            Not loyal to one model. Not loyal to one IDE. I pick the right tool
+            for the job — and I&rsquo;ll show you when to do the same.
           </p>
         </div>
 
@@ -115,6 +128,57 @@ export function AIStack() {
             </motion.li>
           ))}
         </ul>
+
+        {/* Also building with — pill cluster of additional tools */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-14 pt-8 border-t"
+          style={{ borderTopColor: "rgba(237, 233, 223, 0.08)" }}
+        >
+          <div className="flex items-baseline gap-3 mb-5">
+            <span
+              className="editorial-italic"
+              style={{ color: "#3E8E6B", fontSize: "1.1rem" }}
+            >
+              &amp;
+            </span>
+            <span className="mono-caps" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+              Also shipping with
+            </span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {additionalTools.map((tool, i) => (
+              <motion.span
+                key={tool.name}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.04, duration: 0.4 }}
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-md border"
+                style={{
+                  backgroundColor: "#1A2120",
+                  borderColor: "rgba(237, 233, 223, 0.08)",
+                }}
+              >
+                <span
+                  className="font-heading font-bold"
+                  style={{ color: "#EDE9DF", fontSize: "0.875rem", letterSpacing: "-0.01em" }}
+                >
+                  {tool.name}
+                </span>
+                <span
+                  className="hidden sm:inline mono-caps"
+                  style={{ color: "rgba(62, 142, 107, 0.7)", fontSize: "0.65rem" }}
+                >
+                  {tool.note}
+                </span>
+              </motion.span>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
