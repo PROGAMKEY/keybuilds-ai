@@ -72,10 +72,22 @@ export function DiscoverForm() {
         <div className="mono-caps mb-3" style={{ color: "#3E8E6B" }}>
           Brief received
         </div>
-        <p className="leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
+        <p className="leading-relaxed mb-4" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
           {message}
         </p>
-        <p className="text-sm mt-4" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+        <p className="leading-relaxed mb-4" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
+          If you want to skip the queue,{" "}
+          <a
+            href="https://calendly.com/key-keybuilds/aisv-discovery"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#3E8E6B", textDecoration: "underline" }}
+          >
+            book the 30-min discovery call directly
+          </a>{" "}
+          and we&rsquo;ll cover scope, tier, and timing.
+        </p>
+        <p className="text-sm" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
           In the meantime: download the{" "}
           <a href="/assets/key-builds-ai-services.pdf" style={{ color: "#3E8E6B" }}>
             services catalog PDF

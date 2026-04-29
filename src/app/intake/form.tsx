@@ -55,6 +55,14 @@ export function IntakeForm({ initialService = "default" }: { initialService?: st
   }
 
   if (state === "success") {
+    const calendlyByService: Record<string, string> = {
+      cohort: "https://calendly.com/key-keybuilds/cohort-intro",
+      audit: "https://calendly.com/key-keybuilds/aisv-discovery",
+      apex: "https://calendly.com/key-keybuilds/aisv-discovery",
+      booking: "https://calendly.com/key-keybuilds/aisv-discovery",
+      tutoring: "https://calendly.com/key-keybuilds/tutoring",
+    };
+    const cal = calendlyByService[service];
     return (
       <div
         className="p-8 rounded-md border"
@@ -66,9 +74,23 @@ export function IntakeForm({ initialService = "default" }: { initialService?: st
         <div className="mono-caps mb-3" style={{ color: "#3E8E6B" }}>
           Submission received
         </div>
-        <p className="leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
+        <p className="leading-relaxed mb-4" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
           {message}
         </p>
+        {cal && (
+          <p className="leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
+            Want to skip the queue?{" "}
+            <a
+              href={cal}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#3E8E6B", textDecoration: "underline" }}
+            >
+              Book a call directly
+            </a>{" "}
+            on my Calendly.
+          </p>
+        )}
       </div>
     );
   }

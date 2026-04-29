@@ -10,7 +10,7 @@ const services = [
     desc:
       "Live working sessions. You bring the goal — I'll show you the build, screen-share style. You leave with a working artifact, not a homework folder.",
     cta: "Book a session",
-    href: "https://calendly.com/key-keybuilds/30min",
+    href: "https://calendly.com/key-keybuilds/tutoring",
   },
   {
     tier: "Audit with me",
