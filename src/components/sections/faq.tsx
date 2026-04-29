@@ -7,7 +7,7 @@ import { SectionEyebrow } from "@/components/ui/editorial";
 const faqs = [
   {
     q: "Who is Key Builds AI?",
-    a: "Key Builds AI is a builder-educator hybrid running two brands: Key Builds AI (personal brand, education, products, speaking) and Key's Touch (AI consultancy for mid-market and enterprise). She works daily with Claude, ChatGPT, Gemini, and Perplexity, and has shipped 73+ Claude Code skills, 11 custom agents, and 23 productized commands.",
+    a: "Key Builds AI is the personal brand of a full stack software engineer with 10+ years of experience, certified in Data AI Governance and as a Solutions AI Architect. She runs two brands: Key Builds AI (personal brand, education, products, speaking) and Key's Touch (AI consultancy for mid-market and enterprise). She works daily with Claude, ChatGPT, Gemini, Perplexity, Cursor, Codex, Windsurf, Copilot, and Zapier, and has shipped 73+ Claude Code skills, 11 custom agents, and 23 productized commands.",
   },
   {
     q: "What does Key Builds AI offer?",

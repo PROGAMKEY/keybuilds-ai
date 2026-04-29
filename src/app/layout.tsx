@@ -149,10 +149,22 @@ export default function RootLayout({
                                                                                   ],
                                                                   hasOccupation: {
                                                                                     "@type": "Occupation",
-                                                                                    name: "AI Builder and Educator",
+                                                                                    name: "Full Stack Software Engineer, AI Builder, and Educator",
                                                                                     skills:
-                                                                                                        "Claude Code, ChatGPT, Gemini, Perplexity, Next.js, Vercel, MCP, prompt engineering, AI product development",
+                                                                                                        "Full stack software engineering (10+ years), Claude Code, ChatGPT, Gemini, Perplexity, Cursor, Codex, Windsurf, GitHub Copilot, Zapier, Next.js, Vercel, MCP, prompt engineering, AI product development",
                                                                   },
+                                                                  hasCredential: [
+                                                                    {
+                                                                                        "@type": "EducationalOccupationalCredential",
+                                                                                        name: "Certified Data AI Governance",
+                                                                                        credentialCategory: "Certification",
+                                                                    },
+                                                                    {
+                                                                                        "@type": "EducationalOccupationalCredential",
+                                                                                        name: "Certified Solutions AI Architect",
+                                                                                        credentialCategory: "Certification",
+                                                                    },
+                                                                                  ],
                                                                   worksFor: [
                                                                     {
                                                                                         "@type": "Organization",

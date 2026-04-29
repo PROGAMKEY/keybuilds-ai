@@ -48,42 +48,33 @@ export function About() {
 
             {/* Credibility chips below portrait */}
             <div className="mt-5 flex flex-wrap gap-2">
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
-                style={{
-                  backgroundColor: "#1A2120",
-                  borderColor: "rgba(62, 142, 107, 0.3)",
-                }}
-              >
-                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
-                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
-                  10+ yrs full-stack engineer
+              {[
+                "10+ yrs full-stack engineer",
+                "Certified Data AI Governance",
+                "Certified Solutions AI Architect",
+                "AI authority",
+                "Founder × 2",
+              ].map((label) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
+                  style={{
+                    backgroundColor: "#1A2120",
+                    borderColor: "rgba(62, 142, 107, 0.3)",
+                  }}
+                >
+                  <span
+                    style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }}
+                    aria-hidden
+                  />
+                  <span
+                    className="mono-caps"
+                    style={{ color: "#EDE9DF", fontSize: "0.7rem" }}
+                  >
+                    {label}
+                  </span>
                 </span>
-              </span>
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
-                style={{
-                  backgroundColor: "#1A2120",
-                  borderColor: "rgba(62, 142, 107, 0.3)",
-                }}
-              >
-                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
-                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
-                  AI authority
-                </span>
-              </span>
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border"
-                style={{
-                  backgroundColor: "#1A2120",
-                  borderColor: "rgba(62, 142, 107, 0.3)",
-                }}
-              >
-                <span style={{ width: "6px", height: "6px", backgroundColor: "#3E8E6B" }} aria-hidden />
-                <span className="mono-caps" style={{ color: "#EDE9DF", fontSize: "0.7rem" }}>
-                  Founder × 2
-                </span>
-              </span>
+              ))}
             </div>
           </div>
 
@@ -136,6 +127,23 @@ export function About() {
                 <span style={{ color: "#3E8E6B" }}>Zapier</span> — and ship
                 real products on top of them. Then I teach the people around
                 me to do the same.
+              </p>
+              <p
+                className="leading-relaxed"
+                style={{
+                  color: "rgba(237, 233, 223, 0.65)",
+                  fontSize: "clamp(0.98rem, 1.5vw, 1.08rem)",
+                  lineHeight: 1.7,
+                }}
+              >
+                Certified in&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Data AI Governance</span>{" "}
+                and as a&nbsp;
+                <span style={{ color: "#3E8E6B" }}>
+                  Solutions AI Architect
+                </span>
+                . Which means I don&rsquo;t just ship — I ship responsibly,
+                with the guardrails that hold up at scale.
               </p>
               <p
                 className="leading-relaxed"
