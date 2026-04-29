@@ -10,7 +10,7 @@ const services = [
     desc:
       "Live working sessions. You bring the goal — I'll show you the build, screen-share style. You leave with a working artifact, not a homework folder.",
     cta: "Book a session",
-    href: "mailto:key@keybuilds.ai?subject=1:1%20tutoring%20session",
+    href: "https://calendly.com/keybuildsai/1-on-1-tutoring",
   },
   {
     tier: "Audit with me",
@@ -18,15 +18,15 @@ const services = [
     desc:
       "Productized 60-min review of your stack, your repetitive workflows, and the three highest-ROI places to plug AI in. You get a written breakdown + an action list.",
     cta: "Request an audit",
-    href: "mailto:key@keybuilds.ai?subject=AI%20audit%20request",
+    href: "/intake?service=audit",
   },
   {
     tier: "Ask anything",
     title: "Office hours / Q&A",
     desc:
       "Recurring small-group calls. Bring questions, leave with answers, screenshots, and links. Cheaper than 1:1, deeper than a podcast.",
-    cta: "See next session",
-    href: "mailto:key@keybuilds.ai?subject=Q%26A%20session",
+    cta: "Reserve your seat",
+    href: "/intake?service=qa",
   },
   {
     tier: "Speak / sponsor",
@@ -34,7 +34,7 @@ const services = [
     desc:
       "Keynotes, panels, fireside chats, sponsored content. I show up calm, prepared, and on-message — and yes, I'll co-brand with your tool if it earns it.",
     cta: "Pitch me",
-    href: "mailto:key@keybuilds.ai?subject=Speaking%20%2F%20brand%20deal",
+    href: "/intake?service=speaking",
   },
   {
     tier: "Buy a build",
@@ -48,9 +48,9 @@ const services = [
     tier: "Custom build",
     title: "Apex personal assistants",
     desc:
-      "Custom AI assistants tailored to your role. Inbox, calendar, content pipeline, research, ops — wired into the tools you already use, your voice, your guardrails.",
+      "Custom AI assistants tailored to your role. Executive inbox, calendar, content pipeline, research, financial ops, scheduling — wired into the tools you already use, in your voice, with your guardrails.",
     cta: "Commission yours",
-    href: "mailto:key@keybuilds.ai?subject=Apex%20personal%20assistant",
+    href: "/intake?service=apex",
   },
   {
     tier: "For small business",
@@ -58,7 +58,7 @@ const services = [
     desc:
       "Automated scheduling, intake, confirmations, and reminders for small businesses. Wired to Calendly, Cal.com, Google or Outlook, Stripe — whatever you already use. Stops your phone from being the bottleneck.",
     cta: "Build my booking flow",
-    href: "mailto:key@keybuilds.ai?subject=Booking%20system",
+    href: "/intake?service=booking",
   },
   {
     tier: "Cohort",
@@ -66,7 +66,7 @@ const services = [
     desc:
       "Five weeks. Two live calls a week. Twelve to twenty operators, founders, and creators ship their first working AI build alongside me. Demo day at the end. You leave with a tool you actually use.",
     cta: "Apply for the next cohort",
-    href: "mailto:key@keybuilds.ai?subject=Burn%20the%20Gate%20cohort%20application",
+    href: "/intake?service=cohort",
   },
   {
     tier: "Search visibility",
@@ -114,6 +114,8 @@ export function Services() {
             <motion.a
               key={s.title}
               href={s.href}
+              target={s.href.startsWith("http") ? "_blank" : undefined}
+              rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
