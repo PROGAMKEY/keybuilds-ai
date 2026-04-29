@@ -52,6 +52,14 @@ const services = [
     cta: "Commission yours",
     href: "mailto:key@keybuilds.ai?subject=Apex%20personal%20assistant",
   },
+  {
+    tier: "For small business",
+    title: "Booking systems",
+    desc:
+      "Automated scheduling, intake, confirmations, and reminders for small businesses. Wired to Calendly, Cal.com, Google or Outlook, Stripe — whatever you already use. Stops your phone from being the bottleneck.",
+    cta: "Build my booking flow",
+    href: "mailto:key@keybuilds.ai?subject=Booking%20system",
+  },
 ];
 
 export function Services() {
@@ -70,7 +78,7 @@ export function Services() {
               letterSpacing: "-0.01em",
             }}
           >
-            Six ways to work with me.
+            Seven ways to work with me.
           </h2>
           <p
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"

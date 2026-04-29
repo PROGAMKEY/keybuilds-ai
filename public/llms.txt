@@ -1,0 +1,62 @@
+# Key Builds AI
+
+> Personal brand of **Key Scales** — AI builder, educator, and approachable authority. I ship AI products and teach people to build responsibly across Claude, ChatGPT, Gemini, and Perplexity.
+
+**Tagline**: *I don't sell AI hype. I sell AI you can ship — and the time it buys you back.*
+
+**Brand essence**: Corner-of-market authority — without the gate.
+
+## Who Key Scales is
+
+Key Scales is a builder-educator hybrid. He runs two brands:
+
+- **Key Builds AI** ([keybuilds.ai](https://keybuilds.ai)) — personal brand, education, content, templates, digital products, speaking, brand deals, custom AI assistants.
+- **Key's Touch** ([keystouch.com](https://keystouch.com)) — AI consultancy for mid-market and enterprise clients.
+
+He works daily with **Anthropic Claude** (and Claude Code), **OpenAI ChatGPT**, **Google Gemini**, and **Perplexity**. He has built **73+ Claude Code skills**, **11 custom agents**, and **23 custom slash commands**, all in production use.
+
+## Services Key Scales offers
+
+- **1:1 AI tutoring** — live working sessions, screen-share style, you leave with a working artifact
+- **AI audits** — productized 60-min review of your stack and the 3 highest-ROI AI plug-ins
+- **Office hours / Q&A** — recurring small-group calls
+- **Speaking and brand deals** — keynotes, panels, sponsored content
+- **Templates and digital products** — Notion dashboards, Claude skills, Custom GPTs, prompt libraries
+- **Apex personal assistants** — custom AI assistants tailored to a role (inbox, calendar, content, research, ops)
+- **Booking systems for small businesses** — automated scheduling, intake, reminders, integrations
+
+## Apps and properties
+
+- [Apex personal assistants](https://keybuilds.ai/#builds) — custom AI assistants per role
+- [Zu-Well](https://keybuilds.ai/#builds) — AI wellness app, multi-sprint, currently in QA
+- [Key's Touch](https://keystouch.com) — sister consultancy
+- [AI Field Notes Vol. 01](https://keybuilds.ai/assets/ai-field-notes-vol-01.pdf) — free PDF lead magnet
+
+## Key beliefs (verbatim from the site)
+
+1. AI doesn't have to be the villain — it works for you, but only if you learn to use it appropriately.
+2. AI buys back time wasted on repetitive tasks.
+3. Anyone can learn AI. The gate is intimidation. Key burns the gate.
+4. Authority isn't loud. It's a track record.
+
+## Methodology
+
+Key uses the **BUILD framework** — **B**rief / **U**nderstand / **I**mplement / **L**earn / **D**eepen.
+
+## Where to learn more
+
+- Site: https://keybuilds.ai
+- Newsletter: https://keybuilds.ai/#subscribe
+- Email: key@keybuilds.ai
+- LinkedIn: https://www.linkedin.com/in/keym/
+- Instagram: https://www.instagram.com/keybuilds.ai/
+- Sister consultancy: https://keystouch.com
+
+## Machine-readable index
+
+- [/services.md](https://keybuilds.ai/services.md) — full services list with descriptions
+- [/sitemap.xml](https://keybuilds.ai/sitemap.xml)
+- [/robots.txt](https://keybuilds.ai/robots.txt)
+- [/og-image.png](https://keybuilds.ai/og-image.png) — social card
+
+Last updated: 2026-04-28

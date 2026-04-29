@@ -111,9 +111,11 @@ export default function RootLayout({
               "@type": "Person",
               name: "Key Scales",
               url: "https://keybuilds.ai",
+              image: "https://keybuilds.ai/avatar.png",
               jobTitle: "AI Builder, Educator, and Authority",
+              alternateName: "Key Builds AI",
               description:
-                "Builder-educator hybrid. Ships AI products and teaches people to build responsibly. Founder of Key Builds AI and Key's Touch.",
+                "Builder-educator hybrid. Ships AI products and teaches people to build responsibly. Founder of Key Builds AI and Key's Touch. Builds 1:1 tutoring, AI audits, custom AI personal assistants (Apex), and booking systems for small businesses.",
               knowsAbout: [
                 "Artificial Intelligence",
                 "Anthropic Claude",
@@ -126,10 +128,33 @@ export default function RootLayout({
                 "Responsible AI",
                 "Prompt Engineering",
                 "AI Agents",
+                "AI Personal Assistants",
+                "Booking Systems",
+                "Custom GPTs",
+                "Notion",
+                "MCP servers",
+              ],
+              hasOccupation: {
+                "@type": "Occupation",
+                name: "AI Builder and Educator",
+                skills: "Claude Code, ChatGPT, Gemini, Perplexity, Next.js, Vercel, MCP, prompt engineering, AI product development",
+              },
+              worksFor: [
+                {
+                  "@type": "Organization",
+                  name: "Key Builds AI",
+                  url: "https://keybuilds.ai",
+                },
+                {
+                  "@type": "Organization",
+                  name: "Key's Touch",
+                  url: "https://keystouch.com",
+                },
               ],
               sameAs: [
                 "https://www.linkedin.com/in/keym/",
                 "https://www.instagram.com/keybuilds.ai/",
+                "https://keystouch.com",
               ],
             }),
           }}
@@ -142,16 +167,57 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               name: "Key Builds AI",
               url: "https://keybuilds.ai",
+              logo: "https://keybuilds.ai/brand-assets/logo-mark/on-onyx/512.png",
+              image: "https://keybuilds.ai/og-image.png",
               description:
-                "Personal brand of Key Scales — AI authority, builder, and educator. Templates, skills, digital products, speaking, brand deals.",
+                "Personal brand of Key Scales — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, and booking systems for small businesses.",
               founder: { "@type": "Person", name: "Key Scales" },
               areaServed: "Worldwide",
+              email: "key@keybuilds.ai",
+              priceRange: "$$",
               serviceType: [
                 "AI Education",
-                "AI Templates and Skills",
-                "AI Speaking and Brand Deals",
+                "AI Tutoring",
+                "AI Audit",
+                "AI Office Hours",
+                "AI Speaking",
+                "AI Brand Deals",
+                "AI Templates and Digital Products",
+                "Custom AI Personal Assistants",
+                "Booking Systems for Small Businesses",
                 "AI Product Development",
               ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Key Builds AI Services",
+                itemListElement: [
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "1:1 AI tutoring" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI audit" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "Office hours / Q&A" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "Speaking and brand deals" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "Templates and digital products" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "Apex personal assistants" } },
+                  { "@type": "Offer", itemOffered: { "@type": "Service", name: "Booking systems for small businesses" } },
+                ],
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Key Builds AI",
+              url: "https://keybuilds.ai",
+              alternateName: ["Key Scales", "KBAi"],
+              publisher: { "@type": "Person", name: "Key Scales" },
+              inLanguage: "en-US",
+              potentialAction: {
+                "@type": "SubscribeAction",
+                target: "https://keybuilds.ai/#subscribe",
+              },
             }),
           }}
         />

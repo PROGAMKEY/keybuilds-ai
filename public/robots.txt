@@ -1,3 +1,57 @@
+# Key Builds AI — robots.txt
+# Last updated: 2026-04-28
+
 User-agent: *
 Allow: /
+
+# AI search crawlers — explicitly allowed (citation > training opt-out for now)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Block training-only crawlers that don't drive citations
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://keybuilds.ai/sitemap.xml

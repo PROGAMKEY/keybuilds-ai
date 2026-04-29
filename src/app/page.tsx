@@ -7,6 +7,7 @@ import { Services } from "@/components/sections/services";
 import { Builds } from "@/components/sections/builds";
 import { Beliefs } from "@/components/sections/beliefs";
 import { Subscribe } from "@/components/sections/subscribe";
+import { FAQ } from "@/components/sections/faq";
 import { CTA } from "@/components/sections/cta";
 import { Socials } from "@/components/sections/socials";
 import { Footer } from "@/components/sections/footer";
@@ -31,6 +32,8 @@ export default function Home() {
       <Beliefs />
       <SectionDivider />
       <Subscribe />
+      <SectionDivider />
+      <FAQ />
       <SectionDivider />
       <CTA />
       <SectionDivider />

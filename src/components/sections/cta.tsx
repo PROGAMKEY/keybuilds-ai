@@ -7,7 +7,7 @@ export function CTA() {
   return (
     <section className="py-20 sm:py-28 px-6 sm:px-10">
       <div className="max-w-4xl mx-auto">
-        <SectionEyebrow num="09" label="The next move" />
+        <SectionEyebrow num="11" label="The next move" />
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
