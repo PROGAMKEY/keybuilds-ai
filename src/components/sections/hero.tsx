@@ -69,20 +69,20 @@ export function Hero() {
 
       {/* Hero copy — pinned bottom-left, magazine-cover composition */}
       <div className="relative z-10 px-6 sm:px-10 pb-16 sm:pb-24 max-w-6xl w-full mx-auto">
-        <div className="grid grid-cols-12 gap-x-4 gap-y-6 items-end">
+        <div className="grid grid-cols-12 gap-x-6 gap-y-8 items-end">
           {/* Left: name */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.9, ease: [0.23, 0.86, 0.39, 0.96] }}
-            className="col-span-12 md:col-span-7"
+            className="col-span-12 md:col-span-6 lg:col-span-7"
           >
             <h1
               style={{
                 color: "#EDE9DF",
-                fontSize: "clamp(3.5rem, 14vw, 9rem)",
+                fontSize: "clamp(2.75rem, 9.5vw, 7rem)",
                 lineHeight: 0.92,
-                letterSpacing: "-0.04em",
+                letterSpacing: "-0.035em",
               }}
               className="font-heading font-black"
             >
@@ -92,7 +92,6 @@ export function Hero() {
                   color: "#EDE9DF",
                   letterSpacing: "-0.015em",
                   fontWeight: 400,
-                  position: "relative",
                   marginLeft: "-0.04em",
                 }}
               >
@@ -103,18 +102,30 @@ export function Hero() {
                 style={{
                   color: "#EDE9DF",
                   textTransform: "uppercase",
-                  letterSpacing: "-0.045em",
-                  marginTop: "-0.05em",
+                  letterSpacing: "-0.04em",
+                  marginTop: "-0.04em",
                 }}
               >
-                Builds&nbsp;AI
+                Builds
+              </span>
+              <span
+                className="block"
+                style={{
+                  color: "#EDE9DF",
+                  textTransform: "uppercase",
+                  letterSpacing: "-0.04em",
+                  marginTop: "-0.04em",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                AI
                 <span
-                  className="cursor-pulse inline-block ml-2"
+                  className="cursor-pulse inline-block ml-2 align-middle"
                   style={{
-                    width: "0.22em",
-                    height: "0.22em",
+                    width: "0.18em",
+                    height: "0.18em",
                     backgroundColor: "#3E8E6B",
-                    verticalAlign: "0.18em",
+                    transform: "translateY(0.18em)",
                   }}
                   aria-hidden
                 />
@@ -127,7 +138,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.9 }}
-            className="col-span-12 md:col-span-5 md:pl-2"
+            className="col-span-12 md:col-span-6 lg:col-span-5 md:pl-2"
           >
             <p
               className="editorial-italic mb-3"
