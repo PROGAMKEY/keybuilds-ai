@@ -3,6 +3,7 @@ import { Quote } from "@/components/sections/quote";
 import { About } from "@/components/sections/about";
 import { Stats } from "@/components/sections/stats";
 import { AIStack } from "@/components/sections/ai-stack";
+import { Services } from "@/components/sections/services";
 import { Builds } from "@/components/sections/builds";
 import { Beliefs } from "@/components/sections/beliefs";
 import { Subscribe } from "@/components/sections/subscribe";
@@ -22,6 +23,8 @@ export default function Home() {
       <Stats />
       <SectionDivider />
       <AIStack />
+      <SectionDivider />
+      <Services />
       <SectionDivider />
       <Builds />
       <SectionDivider />

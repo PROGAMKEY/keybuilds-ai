@@ -26,7 +26,7 @@ export function Beliefs() {
   return (
     <section className="py-20 sm:py-28 px-6 sm:px-10">
       <div className="max-w-4xl mx-auto">
-        <SectionEyebrow num="06" label="The manifesto" />
+        <SectionEyebrow num="07" label="The manifesto" />
 
         <h2
           className="mt-8 mb-14 editorial-italic"

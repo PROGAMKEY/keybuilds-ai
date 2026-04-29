@@ -14,6 +14,13 @@ const services = [
 
 const apps = [
   {
+    tag: "Personal assistant",
+    title: "Apex",
+    desc: "Custom AI personal assistants tailored to a person's role. Inbox triage, calendar, content pipeline, research, ops — wired into existing tools with the user's voice and guardrails.",
+    stat: "Custom",
+    statLabel: "Per role, per voice",
+  },
+  {
     tag: "Wellness app",
     title: "Zu-Well",
     desc: "Multi-sprint AI wellness app — barcode restaurant scanner, inflammation tracking, custom token-pricing model. Currently in QA.",
@@ -34,6 +41,21 @@ const apps = [
     desc: "73 installed skills, 11 custom agents, 23 slash commands. Marketing, finance, engineering, c-level — all shipping.",
     stat: "100+",
     statLabel: "Tools in arsenal",
+  },
+  {
+    tag: "Digital product",
+    title: "AI Field Notes",
+    desc: "Lead-magnet PDF in the Onyx + Forest Emerald brand system — 10 practical builds that bought back my time. Vol. 01 live, Vol. 02 in production.",
+    stat: "Vol. 01",
+    statLabel: "Free download",
+    href: "/assets/ai-field-notes-vol-01.pdf",
+  },
+  {
+    tag: "Templates",
+    title: "Notion + GPT templates",
+    desc: "Productized digital products — Notion dashboards, Claude skills, custom GPTs, prompt libraries. Build-your-own-agent kits. Catalog opening Q3.",
+    stat: "Q3",
+    statLabel: "Catalog dropping",
   },
 ];
 
@@ -59,7 +81,7 @@ export function Builds() {
   return (
     <section id="builds" className="py-20 sm:py-28 px-6 sm:px-10">
       <div className="max-w-4xl mx-auto">
-        <SectionEyebrow num="05" label="The work" />
+        <SectionEyebrow num="06" label="The work" />
 
         <h2
           className="mt-8 mb-14 editorial-italic"
@@ -114,13 +136,13 @@ export function Builds() {
           <div className="mono-caps mb-6" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
             Apps and properties
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
             {apps.map((app, i) => (
               <motion.a
                 key={app.title}
                 href={app.href || "#"}
-                target={app.href ? "_blank" : undefined}
-                rel={app.href ? "noopener noreferrer" : undefined}
+                target={app.href && app.href.startsWith("http") ? "_blank" : undefined}
+                rel={app.href && app.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
