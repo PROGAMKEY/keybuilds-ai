@@ -45,6 +45,10 @@ const additionalTools = [
   { name: "Make.com", note: "Visual workflows" },
   { name: "n8n", note: "Self-hosted automation" },
   { name: "MCP servers", note: "Tool composition" },
+  { name: "Ollama", note: "Local model runtime" },
+  { name: "Local models", note: "Self-hosted LLMs" },
+  { name: "Hugging Face", note: "Model hub" },
+  { name: "RAG pipelines", note: "Retrieval-augmented gen" },
   { name: "Notion AI", note: "Doc + DB workflows" },
   { name: "ElevenLabs", note: "Voice generation" },
 ];

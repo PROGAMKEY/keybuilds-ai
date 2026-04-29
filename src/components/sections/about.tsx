@@ -124,7 +124,13 @@ export function About() {
                 <span style={{ color: "#3E8E6B" }}>Codex</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Windsurf</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Copilot</span>, and&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Zapier</span> — and ship
+                <span style={{ color: "#3E8E6B" }}>Zapier</span> — plus&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Ollama</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Hugging Face</span>, local
+                models, and{" "}
+                <span style={{ color: "#3E8E6B" }}>RAG</span> pipelines wired
+                through{" "}
+                <span style={{ color: "#3E8E6B" }}>MCP</span> servers. I ship
                 real products on top of them. Then I teach the people around
                 me to do the same.
               </p>

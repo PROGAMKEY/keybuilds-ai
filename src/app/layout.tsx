@@ -203,12 +203,21 @@ export default function RootLayout({
                                                                                     "Custom GPTs",
                                                                                     "Notion",
                                                                                     "MCP servers",
+                                                                                    "Ollama",
+                                                                                    "Hugging Face",
+                                                                                    "Local LLMs",
+                                                                                    "Retrieval-Augmented Generation",
+                                                                                    "Cursor IDE",
+                                                                                    "OpenAI Codex",
+                                                                                    "Windsurf",
+                                                                                    "GitHub Copilot",
+                                                                                    "Zapier",
                                                                                   ],
                                                                   hasOccupation: {
                                                                                     "@type": "Occupation",
                                                                                     name: "Full Stack Software Engineer, AI Builder, and Educator",
                                                                                     skills:
-                                                                                                        "Full stack software engineering (10+ years), Claude Code, ChatGPT, Gemini, Perplexity, Cursor, Codex, Windsurf, GitHub Copilot, Zapier, Next.js, Vercel, MCP, prompt engineering, AI product development",
+                                                                                                        "Full stack software engineering (10+ years), Claude Code, ChatGPT, Gemini, Perplexity, Cursor, Codex, Windsurf, GitHub Copilot, Zapier, Ollama, Hugging Face, local LLMs, RAG pipelines, MCP servers, Next.js, Vercel, prompt engineering, AI product development",
                                                                   },
                                                                   hasCredential: [
                                                                     {
