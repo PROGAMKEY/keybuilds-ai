@@ -1,10 +1,14 @@
 /**
- * Optional Notion integration. Activates only if both env vars are set:
- *   NOTION_TOKEN=secret_xxx (from notion.so/my-integrations)
- *   NOTION_AISV_DB_ID=xxxx  (from setup_notion_aisv_db.py output)
+ * Optional Notion integration. Activates if NOTION_TOKEN is set in Vercel env.
  *
- * If unset, this is a no-op — submissions still log to Vercel runtime.
+ *   NOTION_TOKEN=secret_xxx (from notion.so/my-integrations)
+ *
+ * Database ID is hardcoded below (created 2026-04-29 via Notion MCP):
+ *   AISV Client Pipeline → 45817036d8e4427f8b70cb87b3234327
+ *
+ * If NOTION_TOKEN unset, this is a no-op — submissions still log to Vercel.
  */
+const AISV_DB_ID = "45817036d8e4427f8b70cb87b3234327";
 
 type LeadInput = {
   source: "intake" | "aisv-discover";
@@ -68,9 +72,9 @@ function detectSource(howHeard: string): string {
 
 export async function createNotionLeadCard(input: LeadInput): Promise<void> {
   const token = process.env.NOTION_TOKEN;
-  const dbId = process.env.NOTION_AISV_DB_ID;
+  const dbId = process.env.NOTION_AISV_DB_ID || AISV_DB_ID;
 
-  if (!token || !dbId) {
+  if (!token) {
     // Notion not wired — silent no-op
     return;
   }
