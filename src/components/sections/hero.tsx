@@ -141,7 +141,7 @@ export function Hero() {
             className="col-span-12 md:col-span-6 lg:col-span-5 md:pl-2"
           >
             <p
-              className="editorial-italic mb-3"
+              className="editorial-italic hero-tagline mb-3"
               style={{
                 color: "#3E8E6B",
                 fontSize: "clamp(1.4rem, 3.2vw, 1.9rem)",

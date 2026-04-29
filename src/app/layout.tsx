@@ -151,6 +151,18 @@ export const metadata: Metadata = {
           "AI blog",
           "weekly AI tips",
           "AI tips",
+
+          // Long-tail intent (added 2026-04-29)
+          "AI tools for coaches",
+          "how to automate my business with AI",
+          "best AI tools for solopreneurs",
+          "ship AI products fast",
+          "build AI without coding",
+          "AI for service businesses",
+          "AI for content creators",
+          "AI productivity tools",
+          "AI time-saving tools",
+          "no-code AI automation",
         ],
     authors: [{ name: "Key Builds AI", url: "https://keybuilds.ai" }],
     creator: "Key Builds AI",
@@ -262,6 +274,7 @@ export default function RootLayout({
                                                   __html: JSON.stringify({
                                                                   "@context": "https://schema.org",
                                                                   "@type": "Person",
+                                                                  "@id": "https://keybuilds.ai/#key",
                                                                   name: "Key Builds AI",
                                                                   url: "https://keybuilds.ai",
                                                                   image: "https://keybuilds.ai/avatar.png",
@@ -348,6 +361,8 @@ export default function RootLayout({
                                                                   sameAs: [
                                                                                     "https://www.linkedin.com/in/keym/",
                                                                                     "https://www.instagram.com/keybuilds.ai/",
+                                                                                    "https://www.tiktok.com/@keybuilds.ai",
+                                                                                    "https://www.youtube.com/@keybuildsai",
                                                                                     "https://keystouch.com",
                                                                                   ],
                                                   }),
@@ -359,13 +374,25 @@ export default function RootLayout({
                                                   __html: JSON.stringify({
                                                                   "@context": "https://schema.org",
                                                                   "@type": "ProfessionalService",
+                                                                  "@id": "https://keybuilds.ai/#business",
                                                                   name: "Key Builds AI",
                                                                   url: "https://keybuilds.ai",
                                                                   logo: "https://keybuilds.ai/brand-assets/logo-mark/on-onyx/512.png",
                                                                   image: "https://keybuilds.ai/og-image.png",
                                                                   description:
                                                                                     "Personal brand of Key Builds AI — AI authority, builder, and educator. 1:1 AI tutoring, AI audits, Q&A office hours, speaking and brand deals, templates and digital products, Apex custom personal assistants, booking systems for small businesses, and the Burn the Gate live AI cohort.",
-                                                                  founder: { "@type": "Person", name: "Key Builds AI" },
+                                                                  founder: {
+                                                                                    "@type": "Person",
+                                                                                    "@id": "https://keybuilds.ai/#key",
+                                                                                    name: "Key Builds AI",
+                                                                  },
+                                                                  sameAs: [
+                                                                                    "https://www.linkedin.com/in/keym/",
+                                                                                    "https://www.instagram.com/keybuilds.ai/",
+                                                                                    "https://www.tiktok.com/@keybuilds.ai",
+                                                                                    "https://www.youtube.com/@keybuildsai",
+                                                                                    "https://keystouch.com",
+                                                                                  ],
                                                                   areaServed: "Worldwide",
                                                                   email: "key@keybuilds.ai",
                                                                   priceRange: "$$",
@@ -465,11 +492,72 @@ export default function RootLayout({
                                                                   name: "Key Builds AI",
                                                                   url: "https://keybuilds.ai",
                                                                   alternateName: ["Key Builds AI", "KBAi"],
-                                                                  publisher: { "@type": "Person", name: "Key Builds AI" },
+                                                                  publisher: {
+                                                                                    "@type": "Person",
+                                                                                    "@id": "https://keybuilds.ai/#key",
+                                                                                    name: "Key Builds AI",
+                                                                  },
                                                                   inLanguage: "en-US",
                                                                   potentialAction: {
                                                                                     "@type": "SubscribeAction",
                                                                                     target: "https://keybuilds.ai/#subscribe",
+                                                                  },
+                                                                  speakable: {
+                                                                                    "@type": "SpeakableSpecification",
+                                                                                    cssSelector: ["h1", ".hero-tagline", "#manifesto", "#faq"],
+                                                                  },
+                                                  }),
+                                    }}
+                                  />
+                        <script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{
+                                                  __html: JSON.stringify({
+                                                                  "@context": "https://schema.org",
+                                                                  "@type": "Course",
+                                                                  "@id": "https://keybuilds.ai/#burn-the-gate-cohort",
+                                                                  name: "Burn the Gate — Live AI Cohort",
+                                                                  description:
+                                                                                    "Five-week live AI cohort. Two calls per week (one teaching, one workshop). 12–20 operators, founders, and creators ship their first working AI build alongside Key. Demo day at the end. Async Slack between sessions. Cohorts run 3–4 times per year.",
+                                                                  provider: {
+                                                                                    "@type": "Person",
+                                                                                    "@id": "https://keybuilds.ai/#key",
+                                                                                    name: "Key Builds AI",
+                                                                                    url: "https://keybuilds.ai",
+                                                                  },
+                                                                  url: "https://keybuilds.ai/#cohort",
+                                                                  courseMode: "online",
+                                                                  educationalLevel: "Beginner to Intermediate",
+                                                                  teaches: [
+                                                                                    "How to build with AI",
+                                                                                    "AI workflow automation",
+                                                                                    "Prompt engineering",
+                                                                                    "Claude Code",
+                                                                                    "ChatGPT Custom GPTs",
+                                                                                    "Responsible AI",
+                                                                                    "Shipping AI products",
+                                                                  ],
+                                                                  audience: {
+                                                                                    "@type": "Audience",
+                                                                                    audienceType:
+                                                                                                        "Operators, founders, solopreneurs, content creators, non-technical builders",
+                                                                  },
+                                                                  inLanguage: "en-US",
+                                                                  isAccessibleForFree: false,
+                                                                  hasCourseInstance: {
+                                                                                    "@type": "CourseInstance",
+                                                                                    courseMode: "online",
+                                                                                    courseSchedule: {
+                                                                                                          "@type": "Schedule",
+                                                                                                          repeatFrequency: "P1W",
+                                                                                                          byDay: ["Monday", "Thursday"],
+                                                                                                          duration: "PT1H",
+                                                                                    },
+                                                                                    instructor: {
+                                                                                                          "@type": "Person",
+                                                                                                          "@id": "https://keybuilds.ai/#key",
+                                                                                                          name: "Key Builds AI",
+                                                                                    },
                                                                   },
                                                   }),
                                     }}
