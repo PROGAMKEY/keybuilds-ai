@@ -156,10 +156,12 @@ export function Hero() {
               className="text-sm sm:text-base leading-relaxed mb-6 max-w-md"
               style={{ color: "rgba(237, 233, 223, 0.6)" }}
             >
-              Full stack software engineer for 10+ years. Educator. Authority you can talk to. I
-              work across Claude, ChatGPT, Gemini, Perplexity, Cursor, Codex,
-              Windsurf, Copilot, and Zapier — and teach people to build
-              responsibly. The gate is intimidation. I burn the gate.
+              Full-stack engineer for 10+ years. I build with AI every day —
+              and teach people to do the same.
+              <br />
+              <span style={{ color: "rgba(237, 233, 223, 0.85)" }}>
+                The gate is intimidation. I burn the gate.
+              </span>
             </p>
             <div className="flex gap-3 flex-wrap">
               <a

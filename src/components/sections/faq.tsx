@@ -7,43 +7,43 @@ import { SectionEyebrow } from "@/components/ui/editorial";
 const faqs = [
   {
     q: "Who is Key Builds AI?",
-    a: "Key Builds AI is the personal brand of a full stack software engineer with 10+ years of experience, certified in Data AI Governance and as a Solutions AI Architect. She runs two brands: Key Builds AI (personal brand, education, products, speaking) and Key's Touch (AI consultancy for mid-market and enterprise). She works daily with Claude, ChatGPT, Gemini, Perplexity, Cursor, Codex, Windsurf, Copilot, and Zapier, and has shipped 73+ Claude Code skills, 11 custom agents, and 23 productized commands.",
+    a: "Key Builds AI is the personal brand of Key — a full-stack software engineer with 10+ years of experience, certified in Data AI Governance and as a Solutions AI Architect. She runs two brands: Key Builds AI (education, products, and speaking) and Key's Touch (AI consultancy for mid-market and enterprise). She works daily with Claude, ChatGPT, Gemini, Perplexity, and the major dev tools, and has shipped 73+ Claude Code skills, 11 custom agents, and 23 productized commands.",
   },
   {
     q: "What does Key Builds AI offer?",
-    a: "Eight services: 1:1 AI tutoring, AI audits, office hours / Q&A, speaking + brand deals, templates and digital products, Apex personal assistants, booking systems for small businesses, and the “Burn the Gate” live AI cohort. Plus a free weekly newsletter and a free lead-magnet PDF (AI Field Notes Vol. 01).",
+    a: "Nine services: 1:1 AI tutoring, AI audits, office-hours Q&A, speaking and brand deals, templates and digital products, Apex personal assistants, booking systems for small businesses, the Burn the Gate live AI cohort, and the AI Search Visibility Kit. Plus a free weekly newsletter and a free PDF (AI Field Notes Vol. 01).",
   },
   {
     q: "What is the AI Search Visibility Kit?",
-    a: "A 14-component SEO + AI-search optimization package. Schema.org structured data with linked @id graph (Person, ProfessionalService, WebSite, Course, FAQ), /llms.txt for AI agents, machine-readable /services.md, voice-search speakable markup, robots.txt with explicit AI-bot allowlist, dynamic sitemap, 100+ clustered keywords, Open Graph + Twitter cards, multi-size favicons + PWA manifest, Google Search Console + Bing Webmaster verification + sitemap submission, validation reports, and a Loom hand-off walkthrough. Reference implementation is keybuilds.ai itself. $997 add-on with a website build, $1,997 standalone retrofit. Included on Key Builds AI premium-tier websites and every Key's Touch website.",
+    a: "A 14-component package that makes a website citable by AI search engines — Google AI Overviews, Perplexity, ChatGPT, Gemini, and Copilot — not just rankable on Google. Includes: structured data (schema.org with linked entity graph), an /llms.txt file for AI agents, a machine-readable /services.md, voice-search markup, an AI-bot allowlist in robots.txt, a dynamic sitemap, 100+ clustered keywords, Open Graph and Twitter cards, multi-size favicons and a PWA manifest, Google Search Console and Bing Webmaster verification, and a hand-off walkthrough video. keybuilds.ai is the reference build. Pricing: $997 add-on with a website build, $1,997 standalone retrofit. Included on Key Builds AI premium-tier websites and every Key's Touch website.",
   },
   {
-    q: "What is the “Burn the Gate” cohort?",
-    a: "A five-week live AI cohort with two calls per week — one teaching call, one workshop call. Twelve to twenty operators, founders, and creators ship their first working AI build alongside Key. Demo day at the end. Async Slack between sessions. You leave with a working tool, a peer group that keeps building, and a lifetime alumni community. Cohorts run 3-4 times per year.",
+    q: "What is the Burn the Gate cohort?",
+    a: "A 5-week live AI cohort with 2 calls per week — one teaching call, one workshop call. 12 to 20 founders, operators, and creators ship their first working AI build alongside Key. Demo day at the end. Slack channel between sessions for async help. You leave with a working tool, a peer group that keeps building, and a lifetime alumni community. Cohorts run 3 to 4 times per year.",
   },
   {
     q: "What is the AI Field Notes PDF?",
-    a: "A free 12-page editorial-style PDF — \"10 AI builds that bought back my time.\" It walks through ten practical AI builds you can ship this weekend, each with a takeaway. Free at https://keybuilds.ai/assets/ai-field-notes-vol-01.pdf or via the newsletter.",
+    a: "A free 12-page editorial PDF called \"10 AI builds that bought back my time.\" It walks through ten practical AI projects you can ship this weekend, each with a takeaway. Download at https://keybuilds.ai/assets/ai-field-notes-vol-01.pdf or get it through the newsletter.",
   },
   {
     q: "What AI tools does Key use?",
-    a: "Daily: Anthropic Claude (Claude Code is the CLI), OpenAI ChatGPT (Custom GPTs, image gen), Google Gemini (Nano Banana for brand imagery, Workspace deep-link), and Perplexity (research, sourcing). For shipping: Next.js, Vercel, Tailwind, Framer Motion, ReportLab. Plus 73 Claude Code skills, 11 custom agents, 23 commands.",
+    a: "Every day: Claude (Anthropic) — Claude Code is her main CLI; ChatGPT (OpenAI) for custom GPTs and image generation; Gemini (Google) for brand imagery and Workspace integration; Perplexity for research and citations. For shipping: Next.js, Vercel, Tailwind, Framer Motion, ReportLab. Plus the 73 Claude Code skills, 11 custom agents, and 23 commands she's built.",
   },
   {
     q: "What is the BUILD framework?",
-    a: "Key's signature methodology: Brief, Understand, Implement, Learn, Deepen. Define the task and the time-back goal. Pick the right tool and learn its limits. Ship the smallest useful version. Measure what worked. Scale it and teach it forward.",
+    a: "Key's teaching method, in 5 steps: Brief, Understand, Implement, Learn, Deepen. (1) Brief: define the task and what time you want back. (2) Understand: pick the right tool and learn its limits. (3) Implement: ship the smallest useful version. (4) Learn: measure what worked. (5) Deepen: scale it, then teach it forward.",
   },
   {
     q: "How do booking systems for small businesses work?",
-    a: "Custom-built automated scheduling for service businesses — booking flow, calendar sync, intake form, confirmations, reminders, follow-ups. Wired to whatever the business already uses (Calendly, Cal.com, Google or Outlook calendar, Stripe). Fixed-price packages available.",
+    a: "Automated scheduling, custom-built for service businesses. Includes a booking flow, calendar sync, intake form, confirmations, reminders, and follow-ups. Wired to whatever you already use — Calendly, Cal.com, Google or Outlook calendar, Stripe. Fixed-price packages, no hourly billing.",
   },
   {
     q: "What are Apex personal assistants?",
-    a: "Custom AI assistants tailored to a person's role. Inbox triage, calendar, content pipeline, research, ops — wired into existing tools with the user's voice and guardrails. Each one is built for a specific role rather than as a generic chatbot.",
+    a: "Custom AI assistants built for one specific role. Each one handles inbox, calendar, content pipeline, research, and ops — wired into your existing tools, in your voice, with your guardrails. Built for a job, not as a generic chatbot.",
   },
   {
     q: "How do I work with Key?",
-    a: "For learners: subscribe to the newsletter at keybuilds.ai. For founders or solo operators: email key@keybuilds.ai with the service you want (1:1 tutoring, AI audit, Apex assistant, booking system, etc.). For mid-market and enterprise: visit keystouch.com.",
+    a: "If you want to learn: subscribe to the free newsletter at keybuilds.ai. If you're a founder or solo operator: email key@keybuilds.ai with the service you want (tutoring, audit, Apex, booking system, cohort, etc.). If you're mid-market or enterprise: visit keystouch.com.",
   },
 ];
 

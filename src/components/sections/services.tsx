@@ -8,7 +8,7 @@ const services = [
     tier: "Learn with me",
     title: "1:1 tutoring",
     desc:
-      "Live working sessions. You bring the goal — I'll show you the build, screen-share style. You leave with a working artifact, not a homework folder.",
+      "Live screen-share sessions. Bring a goal — leave with a working build, not homework.",
     cta: "Book a session",
     href: "https://calendly.com/key-keybuilds/tutoring",
   },
@@ -16,7 +16,7 @@ const services = [
     tier: "Audit with me",
     title: "AI audit",
     desc:
-      "Productized 60-min review of your stack, your repetitive workflows, and the three highest-ROI places to plug AI in. You get a written breakdown + an action list.",
+      "60-minute review of your tools and workflows. You get a written breakdown of the three highest-ROI places to plug AI in, plus a clear action list.",
     cta: "Request an audit",
     href: "/intake?service=audit",
   },
@@ -24,7 +24,7 @@ const services = [
     tier: "Ask anything",
     title: "Office hours / Q&A",
     desc:
-      "Recurring small-group calls. Bring questions, leave with answers, screenshots, and links. Cheaper than 1:1, deeper than a podcast.",
+      "Small-group live calls. Bring questions, leave with answers, screenshots, and links. Cheaper than 1:1. Deeper than a podcast.",
     cta: "Reserve your seat",
     href: "/intake?service=qa",
   },
@@ -32,7 +32,7 @@ const services = [
     tier: "Speak / sponsor",
     title: "Speaking and brand deals",
     desc:
-      "Keynotes, panels, fireside chats, sponsored content. I show up calm, prepared, and on-message — and yes, I'll co-brand with your tool if it earns it.",
+      "Keynotes, panels, fireside chats, sponsored content. Calm, prepared, on-message. I co-brand with tools I actually use.",
     cta: "Pitch me",
     href: "/intake?service=speaking",
   },
@@ -40,7 +40,7 @@ const services = [
     tier: "Buy a build",
     title: "Templates and digital products",
     desc:
-      "Notion dashboards, Claude skills, custom GPTs, prompt libraries, build-your-own-agent kits. Productized so you don't pay me hourly to copy-paste.",
+      "Notion dashboards, Claude skills, custom GPTs, prompt libraries, agent kits. Buy the build, skip the hourly rate.",
     cta: "Browse the catalog",
     href: "https://go.keybuilds.ai",
   },
@@ -48,7 +48,7 @@ const services = [
     tier: "Custom build",
     title: "Apex personal assistants",
     desc:
-      "Custom AI assistants tailored to your role. Executive inbox, calendar, content pipeline, research, financial ops, scheduling — wired into the tools you already use, in your voice, with your guardrails.",
+      "An AI assistant built for your specific role — inbox, calendar, content, research, ops. In your voice. In the tools you already use.",
     cta: "Commission yours",
     href: "/intake?service=apex",
   },
@@ -56,7 +56,7 @@ const services = [
     tier: "For small business",
     title: "Booking systems",
     desc:
-      "Automated scheduling, intake, confirmations, and reminders for small businesses. Wired to Calendly, Cal.com, Google or Outlook, Stripe — whatever you already use. Stops your phone from being the bottleneck.",
+      "Automated scheduling, intake, reminders, and follow-ups. Connected to Calendly, Cal.com, Google or Outlook, Stripe — whatever you already use. Your phone stops being the bottleneck.",
     cta: "Build my booking flow",
     href: "/intake?service=booking",
   },
@@ -64,7 +64,7 @@ const services = [
     tier: "Cohort",
     title: "“Burn the Gate” cohort",
     desc:
-      "Five weeks. Two live calls a week. Twelve to twenty operators, founders, and creators ship their first working AI build alongside me. Demo day at the end. You leave with a tool you actually use.",
+      "5 weeks. 2 live calls per week. 12–20 operators, founders, and creators ship their first AI build alongside me. Demo day at the end. You leave with a tool you actually use.",
     cta: "Apply for the next cohort",
     href: "/intake?service=cohort",
   },
@@ -72,7 +72,7 @@ const services = [
     tier: "Search visibility",
     title: "AI Search Visibility Kit",
     desc:
-      "Make your site citable by Google AI Overviews, Perplexity, ChatGPT, Gemini, and Copilot — not just rankable. Schema.org with linked @id graph, /llms.txt, machine-readable services file, voice-search markup, sitemap + robots tuned for AI bots, Google Search Console + Bing wired. Add-on to any website build, or standalone retrofit on an existing site.",
+      "Get your site cited by AI search — Google AI Overviews, Perplexity, ChatGPT, Gemini, Copilot. 14-component package: AI-readable schema, machine-readable services file, voice-search markup, AI-bot allowlist, full Search Console wiring. Add-on with a website ($997) or retrofit an existing site ($1,997).",
     cta: "Submit a discovery brief",
     href: "/aisv/discover",
   },
@@ -100,9 +100,8 @@ export function Services() {
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"
             style={{ color: "rgba(237, 233, 223, 0.55)" }}
           >
-            Pick the lane that matches where you are. From 30-minute Q&amp;A to a
-            custom personal assistant built for your role — same standard, same
-            voice.
+            Pick what matches where you are — from a 30-minute Q&amp;A to a
+            custom assistant built for your role.
           </p>
         </div>
 

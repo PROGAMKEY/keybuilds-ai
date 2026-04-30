@@ -101,8 +101,8 @@ export function About() {
                 letterSpacing: "-0.005em",
               }}
             >
-              Ten-plus years a full stack software engineer. Now obsessed with the moment AI
-              clicks for someone — and they realize they can build, too.
+              I build with AI every day — then I teach the people around me to
+              do the same.
             </p>
 
             <div className="space-y-5">
@@ -114,25 +114,35 @@ export function About() {
                   lineHeight: 1.65,
                 }}
               >
-                I build with AI every single day. Websites, automations,
-                agents, full business systems. I work across&nbsp;
+                Full-stack software engineer for 10+ years. Now I ship websites,
+                automations, AI agents, and full business systems — and walk
+                people through how I did it.
+              </p>
+              <p
+                className="leading-relaxed"
+                style={{
+                  color: "rgba(237, 233, 223, 0.7)",
+                  fontSize: "clamp(0.98rem, 1.5vw, 1.08rem)",
+                  lineHeight: 1.7,
+                }}
+              >
+                I work fluently across the major AI models —&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Claude</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>ChatGPT</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Gemini</span>,&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Perplexity</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Perplexity</span> — and the
+                developer tools that wire them up:&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Cursor</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Codex</span>,&nbsp;
                 <span style={{ color: "#3E8E6B" }}>Windsurf</span>,&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Copilot</span>, and&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Zapier</span> — plus&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Ollama</span>,&nbsp;
-                <span style={{ color: "#3E8E6B" }}>Hugging Face</span>, local
-                models, and{" "}
+                <span style={{ color: "#3E8E6B" }}>Copilot</span>,&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Zapier</span>. For deeper
+                builds: local models on&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Ollama</span> and&nbsp;
+                <span style={{ color: "#3E8E6B" }}>Hugging Face</span>, plus&nbsp;
                 <span style={{ color: "#3E8E6B" }}>RAG</span> pipelines wired
-                through{" "}
-                <span style={{ color: "#3E8E6B" }}>MCP</span> servers. I ship
-                real products on top of them. Then I teach the people around
-                me to do the same.
+                through&nbsp;
+                <span style={{ color: "#3E8E6B" }}>MCP</span> servers.
               </p>
               <p
                 className="leading-relaxed"
@@ -148,8 +158,11 @@ export function About() {
                 <span style={{ color: "#3E8E6B" }}>
                   Solutions AI Architect
                 </span>
-                . Which means I don&rsquo;t just ship — I ship responsibly,
-                with the guardrails that hold up at scale.
+                .{" "}
+                <span style={{ color: "#EDE9DF" }}>
+                  Translation: I ship — with the guardrails that hold up at
+                  scale.
+                </span>
               </p>
               <p
                 className="leading-relaxed"
@@ -159,10 +172,14 @@ export function About() {
                   lineHeight: 1.7,
                 }}
               >
-                My passion: <span style={{ color: "#EDE9DF", fontWeight: 600 }}>AI conversion</span> — moving people from
-                "AI is intimidating" to "AI is the thing I shipped this
-                weekend." Authority isn&rsquo;t loud. It&rsquo;s a track
-                record. I show mine — and teach you to build yours.
+                What I&rsquo;m here for:{" "}
+                <span style={{ color: "#EDE9DF", fontWeight: 600 }}>
+                  AI conversion
+                </span>{" "}
+                — moving people from <em>&ldquo;AI is intimidating&rdquo;</em> to{" "}
+                <em>&ldquo;AI is the thing I shipped this weekend.&rdquo;</em>
+                {" "}Authority isn&rsquo;t loud. It&rsquo;s a track record. I
+                show mine — and help you build yours.
               </p>
               <div className="flex items-center gap-3 pt-3">
                 <span

@@ -8,31 +8,25 @@ const platforms = [
     name: "Claude",
     org: "Anthropic",
     role: "The daily driver",
-    desc: "Claude Code is the CLI I ship from. Skills, agents, MCPs, full workflows. Lives at the center of my stack.",
+    desc: "My main workshop. I use Claude Code (the CLI) to ship websites, agents, and full workflows.",
   },
   {
     name: "ChatGPT",
     org: "OpenAI",
     role: "The fast iterator",
-    desc: "Custom GPTs, image generation, quick copy passes, and the tool I reach for when speed matters more than depth.",
+    desc: "Custom GPTs, image generation, quick copy passes. What I reach for when speed beats depth.",
   },
   {
     name: "Gemini",
     org: "Google",
     role: "The visual + workspace",
-    desc: "Nano Banana for brand imagery. Native Google Workspace deep-link for spreadsheets, docs, and scheduling.",
+    desc: "Nano Banana for brand imagery. Direct line into Google Workspace — spreadsheets, docs, calendar.",
   },
   {
     name: "Perplexity",
     org: "Independent",
     role: "The starting point",
-    desc: "Research, sourcing, citations. Where I start before building anything. Truth-tested before I move.",
-  },
-  {
-    name: "Claude Code",
-    org: "Anthropic",
-    role: "The build environment",
-    desc: "The CLI I use to ship. Skills, agents, MCPs, version-controlled prompts. The workshop.",
+    desc: "Research and citations. Where I start before any build — truth-test first, ship second.",
   },
 ];
 
@@ -76,8 +70,8 @@ export function AIStack() {
             className="col-span-12 md:col-span-5 text-sm sm:text-base leading-relaxed"
             style={{ color: "rgba(237, 233, 223, 0.55)" }}
           >
-            Not loyal to one model. Not loyal to one IDE. I pick the right tool
-            for the job — and I&rsquo;ll show you when to do the same.
+            I&rsquo;m not loyal to one model or one IDE. I pick the right tool
+            for the job — and show you how to do the same.
           </p>
         </div>
 

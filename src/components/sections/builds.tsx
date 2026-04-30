@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 import { SectionEyebrow } from "@/components/ui/editorial";
 
 const services = [
-  { title: "AI-powered websites", desc: "Full sites with SEO, booking, and Schema.org. Deployed in hours." },
-  { title: "Automation workflows", desc: "n8n, Make, Zapier, MCP. Connect your tools and kill busywork." },
-  { title: "Custom AI agents", desc: "Claude Code skills, chatbots, and agents that work for your business." },
-  { title: "SOPs and documentation", desc: "Professional SOPs as Google Docs with automatable Claude Code skills." },
-  { title: "SEO and growth systems", desc: "Schema markup, content calendars, dashboards, and ranking strategy." },
-  { title: "Content systems", desc: "Calendars, dashboards, Notion trackers, and repurposing workflows." },
+  { title: "AI-powered websites", desc: "Full sites with SEO, booking, and AI-search optimization built in. Deployed in hours, not months." },
+  { title: "Automation workflows", desc: "Connect your tools — n8n, Make, Zapier, MCP — so the busywork runs itself." },
+  { title: "Custom AI agents", desc: "Chatbots and agents that handle real work for your business, not toy demos." },
+  { title: "SOPs and documentation", desc: "Polished SOPs in Google Docs, paired with Claude Code skills that automate the steps." },
+  { title: "SEO and growth systems", desc: "Schema markup, content calendars, dashboards, and a clear plan to climb." },
+  { title: "Content systems", desc: "Calendars, dashboards, Notion trackers, and repurposing workflows that ship weekly." },
 ];
 
 const apps = [
   {
     tag: "Personal assistant",
     title: "Apex",
-    desc: "Custom AI personal assistants tailored to a person's role. Inbox triage, calendar, content pipeline, research, ops — wired into existing tools with the user's voice and guardrails.",
+    desc: "An AI assistant built for one specific role. Handles inbox, calendar, content, research, and ops — in your voice, in the tools you already use.",
     stat: "Custom",
     statLabel: "Per role, per voice",
   },
@@ -30,7 +30,7 @@ const apps = [
   {
     tag: "Sister brand",
     title: "Key's Touch",
-    desc: "AI consultancy for mid-market and enterprise. TOUCH framework, lead-magnet PDF, Calendly intake, fully branded.",
+    desc: "My AI consultancy for mid-market and enterprise — done-with-you and done-for-you implementation.",
     stat: "Live",
     statLabel: "keystouch.com",
     href: "https://keystouch.com",
@@ -38,14 +38,14 @@ const apps = [
   {
     tag: "Skills library",
     title: "Custom skills + agents",
-    desc: "73 installed skills, 11 custom agents, 23 slash commands. Marketing, finance, engineering, c-level — all shipping.",
+    desc: "73 skills installed. 11 custom agents. 23 slash commands. Covering marketing, finance, engineering, ops, and exec work — all shipping.",
     stat: "100+",
     statLabel: "Tools in arsenal",
   },
   {
     tag: "Digital product",
     title: "AI Field Notes",
-    desc: "Lead-magnet PDF in the Onyx + Forest Emerald brand system — 10 practical builds that bought back my time. Vol. 01 live, Vol. 02 in production.",
+    desc: "Free 12-page PDF — 10 AI builds that bought back my time. Each one with a takeaway you can ship this weekend.",
     stat: "Vol. 01",
     statLabel: "Free download",
     href: "/assets/ai-field-notes-vol-01.pdf",
@@ -53,7 +53,7 @@ const apps = [
   {
     tag: "Catalog",
     title: "Templates + digital products",
-    desc: "Productized digital products — Notion dashboards, Claude skills, custom GPTs, prompt libraries, build-your-own-agent kits. The full catalog.",
+    desc: "The full shop — Notion dashboards, Claude skills, custom GPTs, prompt libraries, agent kits.",
     stat: "Shop",
     statLabel: "go.keybuilds.ai",
     href: "https://go.keybuilds.ai",
@@ -64,7 +64,7 @@ const projects = [
   {
     tag: "Website + SEO",
     title: "Scales in Justice",
-    desc: "Criminal defense attorney site with 6 practice areas, review schema, FAQ rich snippets, and Calendly booking.",
+    desc: "Criminal defense site — 6 practice areas, review schema, FAQ snippets, Calendly booking. Built to rank.",
     stat: "85/100",
     statLabel: "SEO score",
     href: "https://scalesinjustice.com",
@@ -72,7 +72,7 @@ const projects = [
   {
     tag: "Notion + dashboard",
     title: "Social Media Growth HQ",
-    desc: "Full Notion dashboard with weekly metrics, 6 chart views, content calendar, and milestone tracking to 4M.",
+    desc: "Full Notion dashboard — weekly metrics, 6 chart views, content calendar, milestone tracker to 4M followers.",
     stat: "6 views",
     statLabel: "Built in 1 hour",
   },
