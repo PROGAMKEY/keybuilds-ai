@@ -1,38 +1,62 @@
 import { NextRequest, NextResponse } from "next/server";
 
-/**
- * POST /api/subscribe
- *
- * Captures an email + returns success.
- *
- * TODO: wire to a real provider (Beehiiv / ConvertKit / Substack).
- *   - Beehiiv:    POST https://api.beehiiv.com/v2/publications/{id}/subscriptions
- *   - ConvertKit: POST https://api.convertkit.com/v3/forms/{id}/subscribe
- *   - Substack:   no public API — use the embed widget instead.
- *
- * For now we just log + accept. PDF download URL is returned in the response.
- */
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+const BEEHIIV_API_KEY = process.env.BEEHIIV_API_KEY;
+const BEEHIIV_PUBLICATION_ID = process.env.BEEHIIV_PUBLICATION_ID;
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const email = String(body?.email ?? "").trim().toLowerCase();
 
-    // Minimal validation — RFC 5322 simplified
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json(
-        { ok: false, error: "Invalid email" },
+        { ok: false, error: "Enter a valid email" },
         { status: 400 }
       );
     }
 
-    // Capture (server log shows in Vercel runtime logs)
-    console.log(`[subscribe] ${new Date().toISOString()} ${email}`);
+    if (!BEEHIIV_API_KEY || !BEEHIIV_PUBLICATION_ID) {
+      console.warn(`[subscribe] env not set, accepting ${email} without forward`);
+      return NextResponse.json({ ok: true, mode: "dev" });
+    }
 
-    return NextResponse.json({
-      ok: true,
-      pdf: "/assets/ai-field-notes-vol-01.pdf",
-    });
-  } catch {
+    const referer = req.headers.get("referer") ?? "https://keybuilds.ai";
+
+    const res = await fetch(
+      `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${BEEHIIV_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          reactivate_existing: true,
+          send_welcome_email: true,
+          utm_source: "keybuilds.ai",
+          utm_medium: "site",
+          utm_campaign: "branded_form",
+          referring_site: referer,
+        }),
+      }
+    );
+
+    if (!res.ok) {
+      const text = await res.text();
+      console.error(`[subscribe] beehiiv error ${res.status}: ${text}`);
+      return NextResponse.json(
+        { ok: false, error: "Subscription failed. Try again." },
+        { status: 502 }
+      );
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("[subscribe] handler error", err);
     return NextResponse.json(
       { ok: false, error: "Bad request" },
       { status: 400 }

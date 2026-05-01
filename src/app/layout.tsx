@@ -597,12 +597,6 @@ export default function RootLayout({
                         </noscript>
                         <div className="grain-overlay" aria-hidden />
                   {children}
-                  {/* Beehiiv attribution */}
-                        <Script
-                                    id="beehiiv-attribution"
-                                    src="https://subscribe-forms.beehiiv.com/attribution.js"
-                                    strategy="afterInteractive"
-                                  />
                 </body>
           </html>
         );
