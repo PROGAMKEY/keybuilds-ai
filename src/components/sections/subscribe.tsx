@@ -1,48 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, FormEvent } from "react";
 import { SectionEyebrow } from "@/components/ui/editorial";
+import { BeehiivEmbed } from "@/components/ui/beehiiv-embed";
 
 export function Subscribe() {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [message, setMessage] = useState("");
-
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    setState("loading");
-    setMessage("");
-
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.ok) {
-        throw new Error(data.error || "Something went wrong");
-      }
-      setState("success");
-      setMessage(
-        "You're in. Field Notes Vol. 01 is downloading now — and the next issue lands in your inbox."
-      );
-      // Trigger PDF download
-      if (data.pdf) {
-        const link = document.createElement("a");
-        link.href = data.pdf;
-        link.download = "ai-field-notes-vol-01.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-    } catch (err) {
-      setState("error");
-      setMessage(err instanceof Error ? err.message : "Something went wrong");
-    }
-  }
-
   return (
     <section id="subscribe" className="py-20 sm:py-28 px-6 sm:px-10">
       <div className="max-w-4xl mx-auto">
@@ -107,63 +69,7 @@ export function Subscribe() {
               Drop your email
             </div>
 
-            {state !== "success" ? (
-              <form onSubmit={handleSubmit} className="space-y-3">
-                <input
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={state === "loading"}
-                  className="block w-full px-4 py-3 rounded-md bg-[#1A2120] border outline-none transition-colors"
-                  style={{
-                    borderColor: "rgba(237, 233, 223, 0.12)",
-                    color: "#EDE9DF",
-                    fontSize: "16px",
-                  }}
-                />
-                <button
-                  type="submit"
-                  disabled={state === "loading"}
-                  className="block w-full px-7 py-4 rounded-md font-heading font-semibold text-base transition-all hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                  style={{
-                    backgroundColor: "#3E8E6B",
-                    color: "#0C0E0D",
-                    boxShadow: "0 8px 30px rgba(62, 142, 107, 0.28)",
-                  }}
-                >
-                  {state === "loading" ? "Sending…" : "Get the PDF + tips →"}
-                </button>
-                {state === "error" && (
-                  <p className="text-sm" style={{ color: "#A85245" }}>
-                    {message}
-                  </p>
-                )}
-              </form>
-            ) : (
-              <div
-                className="p-5 rounded-md border"
-                style={{
-                  borderColor: "rgba(62, 142, 107, 0.4)",
-                  backgroundColor: "rgba(62, 142, 107, 0.08)",
-                }}
-              >
-                <div className="mono-caps mb-2" style={{ color: "#3E8E6B" }}>
-                  You&rsquo;re in
-                </div>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.85)" }}>
-                  {message}
-                </p>
-                <a
-                  href="/assets/ai-field-notes-vol-01.pdf"
-                  className="inline-block mt-3 mono-caps"
-                  style={{ color: "#3E8E6B" }}
-                >
-                  Re-download PDF →
-                </a>
-              </div>
-            )}
+            <BeehiivEmbed />
 
             <p className="mt-4 text-xs" style={{ color: "rgba(237, 233, 223, 0.35)" }}>
               I&rsquo;ll never sell your email. Unsubscribe anytime.
