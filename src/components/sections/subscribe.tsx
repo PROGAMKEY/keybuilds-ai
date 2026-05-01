@@ -17,7 +17,7 @@ export function Subscribe() {
           transition={{ duration: 0.9 }}
           className="mt-10 grid grid-cols-12 gap-x-6 gap-y-8 items-start"
         >
-          <div className="col-span-12 md:col-span-7">
+          <div className="col-span-12 md:col-span-6">
             <h2
               className="editorial-italic mb-5"
               style={{
@@ -62,7 +62,7 @@ export function Subscribe() {
           </div>
 
           <div
-            className="col-span-12 md:col-span-5 md:pl-8 md:border-l"
+            className="col-span-12 md:col-span-6 md:pl-8 md:border-l"
             style={{ borderLeftColor: "rgba(62, 142, 107, 0.25)" }}
           >
             <div className="mono-caps mb-3" style={{ color: "rgba(237, 233, 223, 0.5)" }}>

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { GLSLHills } from "@/components/ui/glsl-hills";
 import { ArrowDown } from "lucide-react";
-import { BeehiivEmbed } from "@/components/ui/beehiiv-embed";
 
 export function Hero() {
   return (
@@ -164,8 +163,17 @@ export function Hero() {
                 The gate is intimidation. I burn the gate.
               </span>
             </p>
-            <div className="space-y-4">
-              <BeehiivEmbed className="w-full max-w-md" />
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#subscribe"
+                className="px-5 py-3 rounded-md font-heading font-semibold text-sm inline-flex items-center"
+                style={{
+                  backgroundColor: "#3E8E6B",
+                  color: "#0C0E0D",
+                }}
+              >
+                Get free AI tips &rarr;
+              </a>
               <a
                 href="#builds"
                 className="px-5 py-3 rounded-md border font-heading font-semibold text-sm inline-flex items-center"

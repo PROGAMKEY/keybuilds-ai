@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { SectionEyebrow } from "@/components/ui/editorial";
-import { BeehiivEmbed } from "@/components/ui/beehiiv-embed";
 
 export function CTA() {
   return (
@@ -30,19 +29,20 @@ export function CTA() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px mt-8" style={{ backgroundColor: "rgba(237, 233, 223, 0.08)" }}>
-            <div
-              className="block p-7"
+            <a
+              href="#subscribe"
+              className="block p-7 transition-colors"
               style={{ backgroundColor: "#0C0E0D" }}
             >
               <span className="mono-caps" style={{ color: "#3E8E6B" }}>For learners</span>
               <h3 className="font-heading font-bold mt-3 mb-3" style={{ color: "#EDE9DF", fontSize: "1.25rem" }}>
                 Subscribe to the newsletter
               </h3>
-              <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(237, 233, 223, 0.55)" }}>
                 Free tips, real builds, and step-by-step breakdowns every week.
               </p>
-              <BeehiivEmbed />
-            </div>
+              <div className="mt-5 mono-caps" style={{ color: "#3E8E6B" }}>Get tips &rarr;</div>
+            </a>
 
             <a
               href="mailto:key@keybuilds.ai"
