@@ -20,7 +20,7 @@ const socials = [
   },
   {
     name: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/@keybuildsai",
     handle: "@keybuildsai",
   },
 ];
